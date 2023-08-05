@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hongwei Cai | Works</title>
-    <link rel="stylesheet" href="../cai.css" type="text/css" />
-    <!-- <script src="script/.js" type="text/javascript"></script> -->
+    <link rel="stylesheet" href="../cai.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         .collapsible {
           background-color: #777;
           color: white;
           cursor: pointer;
-          padding: 18px;
+          padding: 6px;
           width: 100%;
           border: none;
           text-align: left;
@@ -25,13 +25,28 @@
         }
         
         .content {
-          padding: 0 18px;
+          padding: 0 6px;
           display: none;
           overflow: hidden;
           background-color: #f1f1f1;
         }
-    </style>
 
+        /* Style buttons */
+        .btn {
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 20px;
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+        background-color: RoyalBlue;
+        }
+        
+    </style>
 
 </head>
 <body>
@@ -50,139 +65,159 @@
             <header id="entete">
                 <h1>Hongwei Cai</h1>
             </header>
+            <div id="reperes">
+                <div class="bloc1">
+                    <audio class="playe" controls autoplay>
+                        <source src="../sound/sunrise.mp3" type="audio/mpeg">
+                        <source src="../sound/sunrise.aac" type="audio/aac">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                </div>
+            </div>
+
+            <div class="bloc2">
+
+            </div>
         </section>
+
         <section id="col2">
             <div id="marges">
-            <div id="visuelTitre"><img src="../img/top.jpg" alt="" /></div>
-            <h1>Index</h1>
+            <div id="visuelTitre"><img src="../img/bg.jpeg" alt=""></div>
+            <h1>Works</h1>
+            <h2>List by Reverse Chronological</h2>
+            <button type="button" class="collapsible" onclick="typeWriter()">Path to the Third Pole (2023) for Sinfonietta</button>
+            <div class="content">
+                <p id="typeWriter">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
 
-                <!-- List by Chronological -->
-                <button class="collapsible"><h3>Path to the Third Pole</h3> (2023) for Sinfonietta</button>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+            <button type="button" class="collapsible">Scapulis Suis (2021) for SSA choir a cappella</button>
+            <div class="content">
+                <p><b>Offertory/Communion</b> for the First Sunday of Lent: “Scapulis Suis”- Psalm 90: 4-5<br><i>Scapulis suis obumbrabit tibi Dominus, et sub pennis ejus sperabis, scuto circumdabit te veritas ejus.</i><br><br>
+                translation:<br><i>The Lord will overshadow you with his pinions, and you will find refuge under his wings. His faithfulness will encompass you with a ​shield.</i><br>Duration: c. 4 min</p><br>
+            </div>
 
+            <button type="button" class="collapsible">How Soon Hath Time (2021) for mix choir divisi a cappella</button>
+            <div class="content">
+                <p><b>How Soon Hath Time</b> is a work for mixed chorus divisi a cappella on John Milton’s sonnet<br><br>Duration: ca. 5 min</p><br><br>
+                <h3>How Soon Hath Time</h3><br>
+                <p>John Milton (1608-1674)<br>
+                How soon hath time, the subtle thief of youth,<br>Stol'n on his wing my three and twentieth year!<br>My hasting days fly on with full career,<br>But my late spring no bud or blossom shew'th.<br> Perhaps my semblance might deceive the truth,<br> That I to manhood am arrived so near,<br>And inward ripeness doth much less appear,<br> That some more timely-happy spirits endu'th.<br>Yet be it less or more, or soon or slow,<br>It shall be still in strictest measure even<br> To that same lot, however mean or high,<br>Toward which Time leads me, and the will of Heaven;<br>All is, if I have grace to use it so,<br> As ever in my great Taskmaster's eye.</p><br>
+                <button class="btn" onclick="window.location.href='../doc/how_soon_hath_time.pdf';" style="float: right;"><i class="fa fa-download"></i> PDF</button><br>
+            </div>
 
-                <button class="collapsible"><h3>Scapulis Suis</h3> (2021) for SSA choir a cappella</button>
-                <div class="content">
-                    <p>Offertory/Communion for the First Sunday of Lent: “Scapulis Suis”- Psalm 90: 4-5<br>Scapulis suis obumbrabit tibi Dominus, et sub pennis ejus sperabis, scuto circumdabit te veritas ejus.<br>
-                    <p>&nbsp;</p>
-                    English translation:<br>The Lord will overshadow you with his pinions, and you will find refuge under his wings. His faithfulness will encompass you with a ​shield.<br>Duration: c. 4 min</p>
-                </div>
+            <button type="button" class="collapsible"><em>Dal niente, al niente</em> (2021) for soprano, flute, and harp</button>
+            <div class="content">
+                <br>
+                <p><b>Dal Niente, al niente</b> is a song set to Shelley’s <i>“Ozymandias”</i> for soprano, flute, and harp.<br>
+                “Even with the prospect of achieving supreme power in life, one becomes nothing more than a heap of dust after death.”<br><br>
+                Duration: 9 min</p><br><br>
+                <h3>Ozymandias</h3><br>
+                <p>by Percy Bysshe Shelley (1792-1822)<br><br>
+                I met a traveller from an antique land,<br>Who said—‘Two vast and trunkless legs of stone<br>Stand in the desert … Near them, on the sand,<br>Half sunk a shattered visage lies, whose frown,<br>And wrinkled lip, and sneer of cold command,<br>Tell that its sculptor well those passions read<br>Which yet survive, stamped on these lifeless things,<br>The hand that mocked them, and the heart that fed;<br>And on the pedestal, these words appear:<br>“My name is Ozymandias, King of Kings,<br>Look on my Works ye Mighty, and despair!”<br>Nothing beside remains. Round the decay<br>Of that colossal Wreck, boundless and bare<br>The lone and level sands stretch far away.’—</p><br><br>
+                <iframe width="" src="https://www.youtube.com/embed/WFrOTR8tXII" frameborder="0" allowfullscreen></iframe><br><br>
+                <p>The first performance was given by The Ensemble Dal Niente at the University of Iowa School of Music Concert Hall, on April 18, 2021</p><br><br>
+                <button class="btn" style="float: right;"><a href="../doc/dal_niente_al_niente.pdf" target="_blank"></a><i class="fa fa-download"></i> PDF</button><br>
+            </div>
+            
+            <button type="button" class="collapsible"><em>Collapsing Shells</em> (2021) for solo double bass and live electronics</button>
+            <div class="content">
+                <p><b>Collapsing Shells</b> was inspired by astrophysical conjectures related to the “frozen star” paradox, a phenomenon predicted by General Relativity. During the gravitational collapsing of a star, the clock inside the shell slows down as the dust shells collapse toward the existing black hole. In real astrophysical settings, matter can pass through the event horizon of the black hole according to the clock of the external observer and will not accumulate around the black hole. In this case, when matter falls towards a black hole, it will not form a “frozen star” to the external observer. Through this work, I attempt to depict the phenomenon by creating several combinations of gestures for the soloist with guided improvisations and a series of Max patches.<br><br>
+                Duration: ca. 13-15 min</p><br><br>
+                <iframe width="" src="https://www.youtube.com/embed/_vHxUGFStTo" frameborder="0" allowfullscreen></iframe><br><br>
+                <p>First Performance:<br>
+                Solo version: by Will Yager at University of Iowa School of Music Concert Hall, on March 28th, 2021<br>
+                With live electronics: by Will Yager at University of Iowa School of Music Concert Hall, on May 9th, 2021</p><br><br>
+                <button class="btn" onclick="window.location.href='../doc/collapsing_shells.pdf';" style="float: right;"><i class="fa fa-download"></i> PDF</button><br>
+            </div>
 
-                <button class="collapsible"><h3>How Soon Hath Time</h3> (2021) for mix choir divisi a cappella</button>
-                <div class="content">
-                    <p>How Soon Hath Time is a work for mixed chorus divisi a cappella on John Milton’s sonnet
-                        <p>&nbsp;</p>
-                        Duration: ca. 5 min
-                        <p>&nbsp;</p>
-                        <h3>How soon hath Time</h3><br>John Milton (1608-1674)
-                        <p>&nbsp;</p>
-                        How soon hath Time, the subtle thief of youth,<br>Stol'n on his wing my three and twentieth year!<br>My hasting days fly on with full career,<br>But my late spring no bud or blossom shew'th.<br> Perhaps my semblance might deceive the truth,<br> That I to manhood am arrived so near,<br>And inward ripeness doth much less appear,<br> That some more timely-happy spirits endu'th.<br>Yet be it less or more, or soon or slow,<br>It shall be still in strictest measure even<br> To that same lot, however mean or high,<br>Toward which Time leads me, and the will of Heaven;<br>All is, if I have grace to use it so,<br> As ever in my great Taskmaster's eye.</p>
-                </div>
+            <button type="button" class="collapsible"><em>Poppies Bursting Into Bloom In The Wind And Rain</em> (2020) string quartet no.2</button>
+            <div class="content">
+                <p>Poppies, tied deeply to sleep, peace, and death, has long been a symbol to fallen soldiers. My second string quartet, <b>Poppies Bursting Into Bloom In The Wind And Rain</b>, is a response to Lieutenant-Colonel John McCrae’s war poem In Flanders Fields. May the world be at peace forever and may you and my heart be at peace forever. The work is dedicated to those spirits who have suffered from war.</p><br><br>
+                <iframe width="" src="https://www.youtube.com/embed/XGA8JzSGyP0" frameborder="0" allowfullscreen></iframe><br><br>
+                <p>First performance:<br>
+                by the JACK Quartet, at Merkin Hall NYC on March 10 2021</p><br>
+                <button class="btn" onclick="window.location.href='../doc/poppies_bursting_into_bloom_in_the_wind_and_rian.pdf';" style="float: right;"><i class="fa fa-download"></i> PDF</button><br>
+            </div>
 
-                <button class="collapsible"><h3>Dal niente, al niente</h3> (2021) for soprano, flute, and harp</button>
-                <div class="content">
-                    <p></p>
-                </div>
+            <button type="button" class="collapsible"><em>Impulse</em> (2020) for solo trombone</button>
+            <div class="content">
+                <p>This piece was composed for the annual SCI 24+24 concert project. The first performance was given by Mark Rheaume at the University of Iowa School of Music Concert Hall, on November 17, 2020<br><br>Duration: ca. 5 min</p><br>
+                <iframe width="80%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/919738207&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/hongwei-cai" title="Hongwei Cai" target="_blank" style="color: #cccccc; text-decoration: none;">Hongwei Cai</a> · <a href="https://soundcloud.com/hongwei-cai/impulse" title="Impulse for solo trombone (2020)" target="_blank" style="color: #cccccc; text-decoration: none;">Impulse for solo trombone (2020)</a></div><br>
+                <button class="btn" onclick="window.location.href='../doc/impulse.pdf';" style="float: right;"><i class="fa fa-download"></i> PDF</button><br>
+            </div>
 
-                <button class="collapsible"><h3>Collapsing Shells</h3> (2021) for solo double bass and live electronics</button>
-                <div class="content">
-                    <p></p>
-                </div>
+            <button type="button" class="collapsible"><em>Unrest</em> (2020) for solo clarinet</button>
+            <div class="content">
+                <p><b>Unrest</b> (2020), for solo clarinet, is a reflection of the time we are currently experiencing during the COVID-19 pandemic. We all undergo a series of life changes and uncertainty, which results in many negative emotions. I hope the restlessness that has haunted my mind resonates among many in the audience, because this piece describes you, me, and our entire society.</p><br><br>
+                <iframe width="" src="https://www.youtube.com/embed/zD4q-P6XR5w" frameborder="0" allowfullscreen></iframe><br><br>
+                <p>The first performance was given by Arianna Edvenson At the University of Iowa School of Music Concert Hall, on September 28, 2020</p>
+                <button class="btn" onclick="window.location.href='../doc/unrest.pdf';" style="float: right;"><i class="fa fa-download"></i> PDF</button><br>
+            </div>
 
-                <button class="collapsible"><h3>poppies bursting into bloom in the wind and rain</h3> (2020) string quartet no.2</button>
-                <div class="content">
-                    <p></p>
-                </div>
+            <button type="button" class="collapsible"><em>Spectrum Study</em> (2019) for orchestra</button>
+            <div class="content">
+                <p></p>
+            </div>
 
-                <button class="collapsible"><h3>Impulse</h3> (2020) for solo trombone</button>
-                <div class="content">
-                    <p></p>
-                </div>
+            <button type="button" class="collapsible"><em>Soaring Over a Storm</em> (2019) for solo violin</button>
+            <div class="content">
+                <p>Hongwei Cai’s composition <b>Soaring Over a Storm</b> showcases the violin as more than a technically proficient instrument, but as a conduit for the emotional and narrative arc of the piece. The composer effectively employs harmonics to imbue the music with an ethereal quality, evoking a mystical and supernatural atmosphere that enhances the evocative representation of the bird’s journey through a turbulent storm. The violin’s unique utilization adds to the overall impression of the instrument as if engaged in a struggle against the chaos, evident in the forceful bow strokes that convey a sense of battling against the storm. Notably, the piece offers moments of stillness and introspection, contributing to a dynamic range and interplay of emotions that culminates in a dramatic climax, creating a deeply moving and unforgettable musical experience. Cai’s proficiency in fully utilizing the expressive capabilities of the violin demonstrates his compositional skill and highlights the enduring appeal of this beloved instrument.<br><br>
+                Duration: ca. 9 min</p><br><br>
+                <iframe width="" src="https://www.youtube.com/embed/cxxwUVrxgY0" frameborder="0" allowfullscreen></iframe><br><br>
+                <p>The first performance was given by Yixue Zhang at the Indiana University on November 9, 2019 during the Midwest Composers Symposium.</p>
+                <button class="btn" onclick="window.location.href='../doc/soaring_over_a_storm.pdf';" style="float: right;"><i class="fa fa-download"></i> PDF</button><br>
+            </div>
 
-                <button class="collapsible"><h3>Unrest</h3> (2020) for solo clarinet</button>
-                <div class="content">
-                    <p></p>
-                </div>
+            <button type="button" class="collapsible"><em>Tempest in Yellow</em> (2019) for solo cello</button>
+            <div class="content">
+                <br><p><a href="https://collections.artsmia.org/art/102931/tempest-in-yellow-dorothea-tanning" target="_blank"><img src="../img/tempest_in_yellow.jpeg" width="100%" alt="Temp&ecirc;te en jaune"></a></p>
+                <p><em>&#169; <a href="https://collections.artsmia.org/art/102931/tempest-in-yellow-dorothea-tanning" target="_blank">Estate Dorothea Tanning / Artists Rights Society (ARS), New York</a></em></p><br><br>
+                <p>Inspired by Dorothea Tanning’s painting Temp&ecirc;te en jaune, my solo cello piece <b>Tempest in Yellow</b> is a reflection while studying the painting, which is found in the Minneapolis Institute of Art. At first glance, the details in the painting were not easy to make out, except for the foreshortened woman’s face. Four major parts, unveiled from the fragmented yellow canvas, hazily connected one with another, creating a circle as if revealing something hidden behind the canvas. Through its static frame, I perceive a dynamic image and abundant energy hidden within the warm tones. The painting conveys meaning through the viewer’s experience, which is similar to our experience listening to music: people with different personal experiences interpret musical works differently. With regard to my composition, motifs, themes, and gestures came from my imagination when gazing at the painting, and I attempt to present the music in a way that corresponds with Tanning’s original painting.<br><br>Duration: 5 min</p><br><br>
+                <iframe width="" src="https://www.youtube.com/embed/_e1BcTtPL08" frameborder="0" allowfullscreen></iframe><br><br>
+                <p>The first performance was given by Eva Richards at the University of Iowa School of Music Concert Hall, on September 8, 2019</p><br><br>
+                <button class="btn" onclick="window.location.href='../doc/tempest_in_yellow.pdf';" style="float: right;"><i class="fa fa-download"></i> PDF</button><br>
+            </div>
 
-                <button class="collapsible"><h3>Spectrum Study</h3> (2019) for orchestra</button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-
-                <button class="collapsible"><h3>Soaring Over a Storm</h3> (2019) for solo violin</button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-                <button class="collapsible"><h3>Tempest in Yellow</h3> (2019) for solo cello</button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-                <button class="collapsible"><h3>…to the shore…</h3> (2018) string quartet no.1</button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-                <button class="collapsible"><h3>You Came from Our Hometown</h3> (2018) poem by Wang Wei(699-761)</button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-
-                <button class="collapsible"><h3>Moments II</h3> (2017) for Orchestra</button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-                <button class="collapsible"><h3>Moments</h3> (2017, rev. 2018) </button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-                <button class="collapsible"><h3>Nocturne</h3> (2017) for clarinet, cello and piano</button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-                <button class="collapsible"><h3>A Shadow Shrouded</h3> (2016) for string quartet</button>
-                <div class="content">
-                    <p></p>
-                </div>
-
-
-
-
-                <!-- <div class="listA">
-                    <h2>List by Chronological</h2>
-                    <ul>
-                        <li><button type="button" class="collapsible"><h3>Path to the Third Pole</h3></button> (2023) for Sinfonietta
-                            <div class="content">
-                                <p>Lorem ipsum...</p>
-                            </div>
-                        </li>
+            <button type="button" class="collapsible"><em>…to the shore…</em> (2018) string quartet no.1</button>
+            <div class="content">
+                <br>
+                <p>Partly inspired by Michael Jackson’s song Heal the World, my string quartet <b><i>... to the shore...</i></b> is an imaginary journey searching for a “place” where there is no damage or hurt, sorrow or fear. The music begins moaning-like and is slow-paced, constantly changing timbre with a dark expression. After a sudden flash — a metaphor for the dawn of hope—, the music shifts, sending a signal to God asking a way to travel from shore to shore. After a difficult trek, the “place” appears unexpectedly. It is quiet and peaceful, like a beautiful meadow, birds singing and with flowers fragrant. Everything is created in beauty and exists in harmonious coexistence.<br><br>The music is dedicated to all the beautiful things in the world.</p><br><br>
+                <iframe width="80%" height="80" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/540808617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/hongwei-cai" title="Hongwei Cai" target="_blank" style="color: #cccccc; text-decoration: none;">Hongwei Cai</a> · <a href="https://soundcloud.com/hongwei-cai/to-the-shore" title="String Quartet No.1 ...to the shore... (2018)" target="_blank" style="color: #cccccc; text-decoration: none;">String Quartet No.1 ...to the shore... (2018)</a></div><br>
+                <p>The recording from a reading session by the JACK Quartet on Dec. 5, 2018, at the Concert Hall in the University of Iowa School of Music.<br><br>
+                <iframe width="" src="https://www.youtube.com/embed/phybaNhzG7A" frameborder="0" allowfullscreen></iframe><br><br>
+                The piece received its first performance with the JACK Quartet on Mar.13, 2019, at the Concert Hall in the University of Iowa School of Music.</p><br>
+                <button class="btn" onclick="window.location.href='../doc/to_the_shore.pdf';" style="float: right;"><i class="fa fa-download"></i> PDF</button><br>
+            </div>
 
 
+            <button type="button" class="collapsible"><em>You Came from Our Hometown</em> (2018) poem by Wang Wei(699-761)</button>
+            <div class="content">
+                <p></p>
+            </div>
 
 
-                    </ul>
-                </div> -->
+            <button type="button" class="collapsible"><em>Moments II</em> (2017) for Orchestra</button>
+            <div class="content">
+                <p></p>
+            </div>
 
-                <!-- <div class="listB">
-                    <h2>List by Ensemble</h2>
-                    <ul>
+            <button type="button" class="collapsible"><em>Moments</em> (2017, rev. 2018) </button>
+            <div class="content">
+                <p></p>
+            </div>
 
+            <button type="button" class="collapsible"><em>Nocturne</em> (2017) for clarinet, cello and piano</button>
+            <div class="content">
+                <p></p>
+            </div>
 
-                    </ul>
-                </div>
-            </div> -->
-
+            <button type="button" class="collapsible"><em>A Shadow Shrouded</em> (2016) for string quartet</button>
+            <div class="content">
+                <p></p>
+            </div>
 
         </section>
-    </section>
     <footer id="pied">
         <h5>&#169;Hongwei Cai</h5>
     </footer>
@@ -194,16 +229,17 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        } 
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
     });
 }
-</script>
 
+</script>
 </body>
+<!-- <script src="../script/script.js" type="text/javascript"></script> -->
 </html>
