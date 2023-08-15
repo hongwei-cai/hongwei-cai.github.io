@@ -30,8 +30,9 @@ template {display: none;}[hidden] {display: none;}
 
 /* Globals
 ------------------------------------------------- */
+html {scroll-behavior: smooth;}
 body {
-  background-color: #ffffff;
+  background-color: #fffffa;
   transition: all 0.2s ease-out;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -51,7 +52,7 @@ a {
   color: hsla(0, 0%, 0%, 0.7);
   text-decoration: none;
   transition: opacity 0.2s ease-out;
-  border-bottom: solid 2px #357edd;
+  border-bottom: solid 2px #5e548e;
   opacity: 1;
 }
 a:hover, a:focus {
@@ -142,21 +143,21 @@ p {margin: 0 0 40px 0;}
 /* Header
 ------------------------------------------------- */
 header {
-  background-color: #2b1e40;
-  background-image: linear-gradient(-45deg #000000, #2b1e40);
+  background-color: #231942;
+  background-image: linear-gradient(-45deg #000000, #231942);
   margin: 0 auto;
   padding: 0;
   height: 100vh;
   display: flex;
-  color: #ffffff;
+  color: #fffffa;
   text-align: left;
 }
 header a {
-  color: #ffffff;
-  border-bottom: 2px solid #357edd;
+  color: #fffffa;
+  border-bottom: 2px solid #5e548e;
 }
 header h1 {
-  color: #ffffff;
+  color: #fffffa;
   padding: 40px 10%;
   width: 50%;
 }
@@ -194,7 +195,7 @@ header ul li {
 }
 #potrait {
   background: url(../img/hs.jpg) right center;
-  background-color: #2b1e40;
+  background-color: #231942;
   background-blend-mode: multiply;
   background-size: 400px;
   background-repeat: no-repeat;
@@ -226,7 +227,7 @@ header .row, h1 {
   background: #e7eff3;
 }
 .section-2 {
-  background: #ffffff;
+  background: #fffffa;
 }
 .section-1, .section-2 {
   padding: 6em 0;
@@ -243,7 +244,7 @@ header .row, h1 {
   margin: 0 10%;
   font-size: 35px;
   line-height: 55px;
-  color: #2b1e40;
+  color: #231942;
 }
 .section-1 ul, .section-2 ul {
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
@@ -290,11 +291,19 @@ iframe .audio {
   }
 }
 
+#works {
+  padding: 40px 0;
+}
+#works p {
+  font-size: 16px;
+}
+
+
 /* Footer
 ------------------------------------------------- */
 footer {
-  background-color: #2b1e40;
-  background-image: linear-gradient(-45deg, #000000, #2b1e40);
+  background-color: #231942;
+  background-image: linear-gradient(-45deg, #000000, #231942);
   padding: 80px 0;
   color: hsla(360, 100%, 100%, 0.5);
   font-size: 16px;
@@ -318,15 +327,27 @@ footer ul li {
 }
 footer a {
   opacity: 1;
-  color: #ffffff;
-  border-bottom: solid 2px #357edd;
+  color: #fffffa;
+  border-bottom: solid 2px #5e548e;
   font-weight: normal;
   text-decoration: none;
 }
 
-
-
-
+/* Colors
+------------------------------------------------- */
+a.link-1 {
+  border-bottom: solid 2px #ff8800;
+}
+a.link-2 {
+  border-bottom: solid 2px #ffa200;
+}
+a.link-3 {
+  border-bottom: solid 2px #ffb700;
+}
+a.link-4 {
+  border-bottom: solid 2px #ffd000;
+  /* color: #ffa200; */
+}
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -352,5 +373,5 @@ footer a {
   display: none;
   overflow: hidden;
   /* background-color: #f1f1f1; */
-  background-color: #ffffff;
+  background-color: #fffffa;
 }
