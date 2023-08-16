@@ -52,7 +52,7 @@ a {
   color: hsla(0, 0%, 0%, 0.7);
   text-decoration: none;
   transition: opacity 0.2s ease-out;
-  border-bottom: solid 2px #5e548e;
+  border-bottom: solid 2px #9bafd9;
   opacity: 1;
 }
 a:hover, a:focus {
@@ -143,8 +143,8 @@ p {margin: 0 0 40px 0;}
 /* Header
 ------------------------------------------------- */
 header {
-  background-color: #231942;
-  background-image: linear-gradient(-45deg #000000, #231942);
+  background-color: #00458e;
+  background-image: linear-gradient(-45deg, #000328, #00458E);
   margin: 0 auto;
   padding: 0;
   height: 100vh;
@@ -154,7 +154,7 @@ header {
 }
 header a {
   color: #fffffa;
-  border-bottom: 2px solid #5e548e;
+  border-bottom: 2px solid #9bafd9;
 }
 header h1 {
   color: #fffffa;
@@ -193,9 +193,9 @@ header ul li {
   padding-right: 20px;
   list-style: none;
 }
-#potrait {
+/* #potrait {
   background: url(../img/hs.jpg) right center;
-  background-color: #231942;
+  background-color: #00458e;
   background-blend-mode: multiply;
   background-size: 400px;
   background-repeat: no-repeat;
@@ -206,7 +206,7 @@ header ul li {
   right: 10%;
   width: 400px;
   height: 400px;
-}
+} */
 @media (max-width: 767px) {
   header #potrait {
     top: -5%;
@@ -302,8 +302,8 @@ iframe .audio {
 /* Footer
 ------------------------------------------------- */
 footer {
-  background-color: #231942;
-  background-image: linear-gradient(-45deg, #000000, #231942);
+  background-color: #00458e;
+  background-image: linear-gradient(-45deg, #000328, #00458E);
   padding: 80px 0;
   color: hsla(360, 100%, 100%, 0.5);
   font-size: 16px;
@@ -328,7 +328,7 @@ footer ul li {
 footer a {
   opacity: 1;
   color: #fffffa;
-  border-bottom: solid 2px #5e548e;
+  border-bottom: solid 2px #9bafd9;
   font-weight: normal;
   text-decoration: none;
 }
@@ -336,17 +336,19 @@ footer a {
 /* Colors
 ------------------------------------------------- */
 a.link-1 {
-  border-bottom: solid 2px #ff8800;
+  border-bottom: solid 2px #ff6d00;
 }
 a.link-2 {
-  border-bottom: solid 2px #ffa200;
+  border-bottom: solid 2px #ff7900;
 }
 a.link-3 {
-  border-bottom: solid 2px #ffb700;
+  border-bottom: solid 2px #ff8500;
 }
 a.link-4 {
-  border-bottom: solid 2px #ffd000;
-  /* color: #ffa200; */
+  border-bottom: solid 2px #ff9100;
+}
+a.link-5 {
+  border-bottom: solid 2px #ff9e00;
 }
 
 /* Style the button that is used to open and close the collapsible content */
