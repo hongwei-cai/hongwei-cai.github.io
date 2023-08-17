@@ -261,7 +261,7 @@ header .row, h1 {
   font-weight: 700;
   color: hsla(0, 0%, 0%, 0.7) !important;
 }
-iframe .video {
+/* iframe .video {
   padding: 20px 0;
   width: 664px;
   height: 373.5px;
@@ -271,7 +271,7 @@ iframe .audio {
   padding: 20px 0;
   width: 664px;
   position: relative;
-}
+} */
 @media (max-width: 800px) {
   .section-1 h3, .section-2 h3 {
     font-size: 25px;
