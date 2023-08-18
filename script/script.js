@@ -22,5 +22,3 @@ function hidePanels() {
     workHeading[i].classList.remove("active");
   }
 }
-
-
