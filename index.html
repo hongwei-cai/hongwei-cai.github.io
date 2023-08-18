@@ -17,8 +17,10 @@
   <meta name="keywords" content="Hongwei Cai,Hongwei Cai composer,Hongwei Cai Official Website,Vincent Cai">
   <meta name="author" content='Hongwei "Vincent" Cai'>
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="script/connection_check.js" async></script>
   <script src="script/tab.js" async></script>
   <script src="script/accordion.js" async></script>
+  
 </head>
 <body>
   <header id="home">
@@ -44,7 +46,7 @@
           David Gompper (director)<br>
           Time: TBA</p>
         <a href="https://cnm.uiowa.edu/season-57-2022-2023/concert-13" target="blank">https://cnm.uiowa.edu/</a> -->
-        <p><a href="#works">View Works &#8595;</a></p>
+        <p><a href="#sidebar">Selected Works &#8595;</a></p>
       </div>
     </article>
   </header>
@@ -99,19 +101,37 @@
         </ul>
       </div>
       <div class="row">
-        <div id="tab-1" class="tabcontent">
+        <div class="tabcontent" id="tab-1">
           <div class="col-1">
             <h2>Dal niente, al niente</h2>
             <div class="youtube-container">
               <iframe
-                width="560"
-                height="315"
+                class="youtube-embed"
                 src="https://www.youtube.com/embed/WFrOTR8tXII?rel=0" 
                 title="YouTube video player" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
               </iframe>
             </div>
+            
+
+            <!-- <div class="video-container">
+              <div class="youtube-container">
+                <iframe
+                  class="youtube-embed"
+                  src="https://www.youtube.com/embed/WFrOTR8tXII?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <video class="local-video" 
+                 width="560"
+                 height="315" controls>
+                <source src="videos/dal_niente_al_niente.mp4" type="video/mp4">
+                Your browser does not support the video tag
+              </video>
+            </div> -->
           </div>
           <div class="col-2">
             <p><b>Ensemble Dal Niente</b><br>
@@ -126,13 +146,11 @@
             “Even with the prospect of achieving supreme power in life, one becomes nothing more than a heap of dust after death.”</p>
           <p class="right-content">– H. Vincent Cai</p>
         </div>
-        <div id="tab-2" class="tabcontent">
+        <div class="tabcontent" id="tab-2">
           <div class="col-1">
             <h2>Poppies bursting into bloom in the wind and rain</h2>
             <div class="youtube-container">
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/XGA8JzSGyP0?rel=0" 
                 title="YouTube video player" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -159,13 +177,11 @@
             "The work is dedicated to those spirits who have suffered from war."</p>
           <p class="right-content">– H. Vincent Cai</p>
         </div>
-        <div id="tab-3" class="tabcontent">
+        <div class="tabcontent" id="tab-3">
           <div class="col-1">
-            <h2>...to the shore...</h2>
+            <h2>Attainment of the other shore</h2>
             <div class="youtube-container">
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/phybaNhzG7A?rel=0" 
                 title="YouTube video player" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -182,8 +198,8 @@
               <a href="https://www.jackquartet.com" target="blank">www.jackquartet.com</a></p>
           </div>
           <p class="center-content">
-            <strong>...to the shore...</strong><br>
-            My string quartet is an imaginary journey searching for a “place”<br>
+            <strong>Attainment of the other shore</strong><br>
+            This string quartet is an imaginary journey searching for a “place”<br>
             where there is no damage or hurt, sorrow or fear.<br>
             It is quiet and peaceful,<br>
             like a beautiful meadow,<br>
@@ -240,8 +256,6 @@
           <p>Duration: 9 min</p>
           <div class="youtube-container">
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/WFrOTR8tXII?rel=0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -263,8 +277,6 @@
           <p>Duration: ca. 13-15 min</p>
           <div class="youtube-container">
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/_vHxUGFStTo?rel=0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -282,8 +294,6 @@
           <p>Poppies, tied deeply to sleep, peace, and death, has long been a symbol to fallen soldiers. My second string quartet, <b>Poppies bursting into bloom in the wind and rain</b>, is a response to Lieutenant-Colonel John McCrae’s war poem In Flanders Fields. May the world be at peace forever and may you and my heart be at peace forever. The work is dedicated to those spirits who have suffered from war.</p>
           <div class="youtube-container">
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/XGA8JzSGyP0?rel=0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -292,7 +302,7 @@
           </div>
           <p>First performance:<br>
           by the JACK Quartet, at Merkin Hall NYC on March 10 2021</p>
-          <a class="pdf" href="doc/poppies_bursting_into_bloom_in_the_wind_and_rian.pdf" target="_blank">PDF</a>
+          <a class="pdf" href="doc/string_quartet_no2.pdf" target="_blank">PDF</a>
         </div>
 
         <button class="workTitle"><em>Impulse</em> (2020) for solo trombone</button>
@@ -311,8 +321,6 @@
           <p><b>Unrest</b> (2020), for solo clarinet, is a reflection of the time we are currently experiencing during the COVID-19 pandemic. We all undergo a series of life changes and uncertainty, which results in many negative emotions. I hope the restlessness that has haunted my mind resonates among many in the audience, because this piece describes you, me, and our entire society.</p>
           <div class="youtube-container">
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/zD4q-P6XR5w?rel=0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -334,8 +342,6 @@
           <p>Duration: ca. 9 min</p>
           <div class="youtube-container">
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/cxxwUVrxgY0?rel=0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -356,8 +362,6 @@
           <p>Duration: 5 min</p>
           <div class="youtube-container">
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/_e1BcTtPL08?rel=0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -368,17 +372,15 @@
           <a class="pdf" href="doc/tempest_in_yellow.pdf" target="_blank">PDF</a>
         </div>
 
-        <button class="workTitle"><em>…to the shore…</em> (2018) string quartet</button>
+        <button class="workTitle"><em>Attainment of the other shore</em> (2018) string quartet</button>
         <div class="workContent">
-          <p>Partly inspired by Michael Jackson’s song Heal the World, my string quartet <b><i>... to the shore...</i></b> is an imaginary journey searching for a “place” where there is no damage or hurt, sorrow or fear. The music begins moaning-like and is slow-paced, constantly changing timbre with a dark expression. After a sudden flash — a metaphor for the dawn of hope—, the music shifts, sending a signal to God asking a way to travel from shore to shore. After a difficult trek, the “place” appears unexpectedly. It is quiet and peaceful, like a beautiful meadow, birds singing and with flowers fragrant. Everything is created in beauty and exists in harmonious coexistence.<br>The music is dedicated to all the beautiful things in the world.</p>
+          <p>Partly inspired by Michael Jackson’s song Heal the World, my string quartet <b><i>Attainment of the other shore</i></b> is an imaginary journey searching for a “place” where there is no damage or hurt, sorrow or fear. The music begins moaning-like and is slow-paced, constantly changing timbre with a dark expression. After a sudden flash — a metaphor for the dawn of hope—, the music shifts, sending a signal to God asking a way to travel from shore to shore. After a difficult trek, the “place” appears unexpectedly. It is quiet and peaceful, like a beautiful meadow, birds singing and with flowers fragrant. Everything is created in beauty and exists in harmonious coexistence.<br>The music is dedicated to all the beautiful things in the world.</p>
           <div class="soundcloud-container">
-            <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/540808617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe width="100%" height="300" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/540808617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
           </div>
           <p>The recording from a reading session by the JACK Quartet on Dec. 5, 2018, at the Concert Hall in the University of Iowa School of Music.</p>
           <div class="youtube-container">
             <iframe
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/phybaNhzG7A?rel=0" 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -386,7 +388,7 @@
             </iframe>
           </div>
           <p>The piece received its first performance with the JACK Quartet on Mar.13, 2019, at the Concert Hall in the University of Iowa School of Music.</p>
-          <a class="pdf" href="doc/to_the_shore.pdf" target="_blank">PDF</a>
+          <a class="pdf" href="doc/string_quartet_no1.pdf" target="_blank">PDF</a>
         </div>
 
         <button class="workTitle"><em>You Came from Our Hometown</em> (2018) for soprano</button>
