@@ -17,8 +17,8 @@
   <meta name="keywords" content="Hongwei Cai,Hongwei Cai composer,Hongwei Cai Official Website,Vincent Cai">
   <meta name="author" content='Hongwei "Vincent" Cai'>
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script src="script/script.js" async></script>
-  <!-- <link rel="stylesheet" href="css/test.css" type="text/css"> -->
+  <script src="script/tab.js" async></script>
+  <script src="script/accordion.js" async></script>
 </head>
 <body>
   <header id="home">
@@ -91,34 +91,106 @@
     <article class="container">
       <div class="row">
         <p><a class="button" href="#home">&#8593; home</a></p>
-        <ul>
-          <li>tab1</li>
-          <li>tab2</li>
-          <li>tab3</li>
+        <h1>Selective Works</h1>
+        <ul class="secondary-tab">
+          <li class="tablinks" onmouseover="openTab(event, 'tab-1')" id="defaultOpen">Dal niente, al niente</li>
+          <li class="tablinks" onmouseover="openTab(event, 'tab-2')">String Quartet No.2</li>
+          <li class="tablinks" onmouseover="openTab(event, 'tab-3')">String Quartet No.1</li>
         </ul>
       </div>
       <div class="row">
-        <div class="col-1">
-          <h2>...to the shore...</h2>
-          <div class="youtube-container">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/phybaNhzG7A?rel=0" 
-              title="YouTube video player" 
-              
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
+        <div id="tab-1" class="tabcontent">
+          <div class="col-1">
+            <h2>Dal niente, al niente</h2>
+            <div class="youtube-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/WFrOTR8tXII?rel=0" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
           </div>
+          <div class="col-2">
+            <p><b>Ensemble Dal Niente</b><br>
+              Amanda Deboer Bartlett - Soprano<br>
+              Emma Hospelhorn - Flute<br>
+              Ben Melsky - Harp / Executive Director<br>
+              <a href="www.dalniente.com" target="blank">www.dalniente.com</a></p>
+          </div>
+          <p class="center-content">
+            <strong>Dal niente, al niente</strong><br>
+            is a song set to <em>Ozymandias</em> by Percy Bysshe Shelley.<br>
+            “Even with the prospect of achieving supreme power in life, one becomes nothing more than a heap of dust after death.”</p>
+          <p class="right-content">– H. Vincent Cai</p>
         </div>
-        <div class="col-2">
-          <p><b>JACK Quartet</b><br>
-            Christopher Otto, violin<br>
-            Austin Wulliman, violin<br>
-            John Pickford Richards, viola<br>
-            Jay Campbell, cello<br>
-            <a href="https://www.jackquartet.com" target="blank">www.jackquartet.com</a></p>
+        <div id="tab-2" class="tabcontent">
+          <div class="col-1">
+            <h2>Poppies bursting into bloom in the wind and rain</h2>
+            <div class="youtube-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/XGA8JzSGyP0?rel=0" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <div class="col-2">
+            <p><b>JACK Quartet</b><br>
+              Christopher Otto, violin<br>
+              Austin Wulliman, violin<br>
+              John Pickford Richards, viola<br>
+              Jay Campbell, cello<br>
+              <a href="https://www.jackquartet.com" target="blank">www.jackquartet.com</a></p>
+          </div>
+          <p class="center-content">
+            <strong>Poppies bursting into bloom in the wind and rain</strong><br>
+            Poppies,<br>
+            tied deeply to sleep, peace, and death,<br>
+            has long been a symbol to fallen soldiers.<br>
+            My second string quartet is a response to Lieutenant-Colonel John McCrae’s war poem <em>In Flanders Fields</em>.<br>
+            May the world be at peace forever,<br>
+            and may you and my heart be at peace forever...<br>
+            "The work is dedicated to those spirits who have suffered from war."</p>
+          <p class="right-content">– H. Vincent Cai</p>
+        </div>
+        <div id="tab-3" class="tabcontent">
+          <div class="col-1">
+            <h2>...to the shore...</h2>
+            <div class="youtube-container">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/phybaNhzG7A?rel=0" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <div class="col-2">
+            <p><b>JACK Quartet</b><br>
+              Christopher Otto, violin<br>
+              Austin Wulliman, violin<br>
+              John Pickford Richards, viola<br>
+              Jay Campbell, cello<br>
+              <a href="https://www.jackquartet.com" target="blank">www.jackquartet.com</a></p>
+          </div>
+          <p class="center-content">
+            <strong>...to the shore...</strong><br>
+            My string quartet is an imaginary journey searching for a “place”<br>
+            where there is no damage or hurt, sorrow or fear.<br>
+            It is quiet and peaceful,<br>
+            like a beautiful meadow,<br>
+            birds singing and with flowers fragrant.<br>
+            Everything is created in beauty and exists in harmonious coexistence...<br>
+            "The music is dedicated to all the beautiful things in the world."</p>
+          <p class="right-content">– H. Vincent Cai</p>
         </div>
       </div>
     </article>
@@ -252,9 +324,9 @@
         </div>
 
         <button class="workTitle"><em>Spectrum Study</em> (2019) for orchestra</button>
-        <!-- <div class="workContent">
+        <div class="workContent">
           <p></p>
-        </div> -->
+        </div>
 
         <button class="workTitle"><em>Soaring Over a Storm</em> (2019) for solo violin</button>
         <div class="workContent">
@@ -318,25 +390,25 @@
         </div>
 
         <button class="workTitle"><em>You Came from Our Hometown</em> (2018) for soprano</button>
-        <!-- <div class="workContent">
+        <div class="workContent">
           <p></p>
-        </div> -->
+        </div>
         <button class="workTitle"><em>Moments II</em> (2017) for Orchestra</button>
-        <!-- <div class="workContent">
+        <div class="workContent">
           <p></p>
-        </div> -->
+        </div>
         <button class="workTitle"><em>Moments</em> (2017, rev. 2018) for Chamber Orchestra</button>
-        <!-- <div class="workContent">
+        <div class="workContent">
           <p></p>
-        </div> -->
+        </div>
         <button class="workTitle"><em>Nocturne</em> (2017) for clarinet, cello and piano</button>
-        <!-- <div class="workContent">
+        <div class="workContent">
           <p></p>
-        </div> -->
+        </div>
         <button class="workTitle"><em>A Shadow Shrouded</em> (2016) for string quartet</button>
-        <!-- <div class="workContent">
+        <div class="workContent">
           <p></p>
-        </div> -->
+        </div>
       </div>
     </article>
   </section>

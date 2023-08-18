@@ -227,6 +227,44 @@ header .row, h1 {
 .center-content {
   text-align: center;
 }
+.right-content {
+  text-align: right;
+}
+
+/* Style the tab */
+.secondary-tab {
+  overflow: hidden;
+  background-color: #e7eff3;
+}
+.secondary-tab li {
+  background-color: inherit;
+  color: black;
+  padding: 12px 16px;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+.secondary-tab li:hover 
+.secondary-tab li:focus {
+  background-color: #ddd;
+}
+.secondary-tab li.active {
+  background-color: #ccc;
+}
+.tabcontent {
+  padding: 6px 12px;
+  border-top: none;
+  display: none;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* style YouTube Vedio */
 .youtube-container {
   position: relative;
   overflow: hidden;
