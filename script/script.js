@@ -1,14 +1,26 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// Accordion effect on work list
+let workHeading = document.querySelectorAll(".workTitle");
+let workPanel = document.querySelectorAll(".workContent");
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        } 
-    });
+for (let i = 0; i < workHeading.length; i++) {
+  workHeading[i].onclick = function() {
+    if (this.nextElementSibling.style.maxHeight) {
+      hidePanels();
+    } else {
+      showPanel(this);
+    }
+  };
 }
+function showPanel(elem) {
+  hidePanels();
+  elem.classList.add("active");
+  elem.nextElementSibling.style.maxHeight = elem.nextElementSibling.scrollHeight + "px";
+}
+function hidePanels() {
+  for (let i = 0; i < workPanel.length; i++) {
+    workPanel[i].style.maxHeight = null;
+    workHeading[i].classList.remove("active");
+  }
+}
+
+

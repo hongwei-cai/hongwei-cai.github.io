@@ -28,6 +28,7 @@ details {display: block;}
 summary {display: list-item;}
 template {display: none;}[hidden] {display: none;}
 
+
 /* Globals
 ------------------------------------------------- */
 html {scroll-behavior: smooth;}
@@ -42,6 +43,10 @@ body {
   line-height: 35px;
   color: hsla(0, 0%, 0%, 0.7);
 }
+:lang(zh) 	{
+  font-family: "Microsoft YaHei", sans-serif;
+  font-size: 100%;
+  }
 @media (max-width: 767px) {
   body {
     font-size: 16px;
@@ -51,6 +56,7 @@ body {
 a {
   color: hsla(0, 0%, 0%, 0.7);
   text-decoration: none;
+  /* text-transform: uppercase; */
   transition: opacity 0.2s ease-out;
   border-bottom: solid 2px #9bafd9;
   opacity: 1;
@@ -79,30 +85,6 @@ a:hover, a:focus {
 .row:before, .row:after {display: table; content: "";}
 .row:after {clear: both;}
 
-.row [class*="span"] {
-  display: block;
-  float: left;
-  width: 100%;
-  min-height: 28px;
-  margin-left: 2.127659574%;
-  padding:0 2%;
-  box-sizing: border-box;
-}
-
-.row [class*="span"]:first-child {margin-left: 0;}
-
-.row .span6 {width: 99.99999998999999%;}
-.row .span4 {width: 65.51724137931035%;}
-.row .span3 {width: 48.93617020799999%;}
-.row .span2 {width: 31.914893614%;}
-
-.col-1 {
-  width: 40%;
-}
-.col-2 {
-  width: 60%;
-}
-
 /* Button
 ------------------------------------------------- */
 a.button {
@@ -112,6 +94,9 @@ a.button {
   text-transform: uppercase;
   font-size: 12px;
   opacity:1;
+}
+a.pdf {
+  float: right;
 }
 
 /* Typography
@@ -193,29 +178,7 @@ header ul li {
   padding-right: 20px;
   list-style: none;
 }
-/* #potrait {
-  background: url(../img/hs.jpg) right center;
-  background-color: #00458e;
-  background-blend-mode: multiply;
-  background-size: 400px;
-  background-repeat: no-repeat;
-  position: absolute;
-  display: block;
-  z-index: 1;
-  top: 5%;
-  right: 10%;
-  width: 400px;
-  height: 400px;
-} */
-@media (max-width: 767px) {
-  header #potrait {
-    top: -5%;
-    right: 5%;
-    width: 250px;
-    height: 250px;
-    background-size: 250px;
-  }
-}
+
 header .row, h1 {
   position: relative;
   z-index: 2;
@@ -261,17 +224,28 @@ header .row, h1 {
   font-weight: 700;
   color: hsla(0, 0%, 0%, 0.7) !important;
 }
-/* iframe .video {
-  padding: 20px 0;
-  width: 664px;
-  height: 373.5px;
-  position: relative;
+.center-content {
+  text-align: center;
 }
-iframe .audio {
-  padding: 20px 0;
-  width: 664px;
+.youtube-container {
   position: relative;
-} */
+  overflow: hidden;
+  width: 100%;
+  margin: 40px 0;
+}
+.youtube-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 800px) {
   .section-1 h3, .section-2 h3 {
     font-size: 25px;
@@ -291,13 +265,69 @@ iframe .audio {
   }
 }
 
-#works {
-  padding: 40px 0;
-}
 #works p {
+  margin: 30px 0;
   font-size: 16px;
 }
 
+.col-1 {
+  width: 60%;
+  padding: 0 20px;
+}
+.col-2 {
+  width: 30%;
+  padding: 0 10px;
+  text-align: center;
+
+}
+.col-1, .col-2 {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.col-2 p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (max-width: 800px) {
+  .col-1, .col-2 {
+    width: 100%;
+  }
+}
+
+/* accordion effect for worklist */
+.workTitle {
+  background-color: #eeeeee;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+.active, .workTitle:hover {
+  background-color: #cccccc;
+}
+.workTitle:after {
+  content: '\002B';
+  color: #fffffa;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.workContent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fffffa;
+}
 
 /* Footer
 ------------------------------------------------- */
@@ -333,7 +363,7 @@ footer a {
   text-decoration: none;
 }
 
-/* Colors
+/* Link colors
 ------------------------------------------------- */
 a.link-1 {
   border-bottom: solid 2px #ff6d00;
@@ -349,31 +379,4 @@ a.link-4 {
 }
 a.link-5 {
   border-bottom: solid 2px #ff9e00;
-}
-
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background-color: #eeeeee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  /* background-color: #f1f1f1; */
-  background-color: #fffffa;
 }
