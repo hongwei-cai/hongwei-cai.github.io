@@ -47,7 +47,7 @@ body {
   font-family: "Microsoft YaHei", sans-serif;
   font-size: 100%;
   }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   body {
     font-size: 16px;
     line-height: 26px;
@@ -151,7 +151,7 @@ header h1 {
     padding: 40px 10%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   header h1 {
     width: 80%;
   }
@@ -214,6 +214,11 @@ header .row, h1 {
   margin: 0;
   padding: 5px 0;
   font-weight: 700;
+}
+#space-between-tab,
+#space-between-tab {
+  display: flex;
+  justify-content: space-between;
 }
 .section-1 ul li, .section-2 ul li {
   list-style: none;
@@ -295,10 +300,10 @@ header .row, h1 {
   margin: 0;
   }
 }
-@media (max-width: 1500px) {
-  .section-1 h3, .section-2 h3 {
+@media (min-width: 1500px) {
+  h3 {
     font-size: 45px;
-    line-height: 65px;
+    line-height: 55px;
   }
 }
 
