@@ -29,9 +29,11 @@ summary {display: list-item;}
 template {display: none;}[hidden] {display: none;}
 
 
-/* Globals
-------------------------------------------------- */
-html {scroll-behavior: smooth;}
+/* Globals */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fffffa;
   transition: all 0.2s ease-out;
@@ -65,14 +67,13 @@ a:hover, a:focus {
   opacity: 0.5;
 }
 
-/* Grid
-------------------------------------------------- */
+/* Grid */
 .container {
   position: relative;
   padding: auto 0;
   width: 90%;
   max-width: 1360px;
-  margin:auto;
+  margin: auto;
 }
 .container:before, .container:after {display: table; content: "";}
 .container:after {clear: both;}
@@ -85,8 +86,7 @@ a:hover, a:focus {
 .row:before, .row:after {display: table; content: "";}
 .row:after {clear: both;}
 
-/* Button
-------------------------------------------------- */
+/* Button */
 a.button {
   color: #000000;
   border: solid 2px #000000;
@@ -98,9 +98,20 @@ a.button {
 a.pdf {
   float: right;
 }
+.work-order {
+  color: hsla(0, 0%, 0%, 0.7);
+  border:none;
+  padding:7px 25px 8px 25px;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 700;
+  opacity:1;
+}
 
-/* Typography
-------------------------------------------------- */
+/* Typography */
 h1,h2,h3,h4,h5,h6 {
   font-size: 35px;
   line-height: 45px;
@@ -125,10 +136,8 @@ h1,h2,h3,h4,h5,h6 {
 
 p {margin: 0 0 40px 0;}
 
-/* Header
-------------------------------------------------- */
+/* Header */
 header {
-  background-color: #00458e;
   background-image: linear-gradient(-45deg, #000328, #00458E);
   margin: 0 auto;
   padding: 0;
@@ -137,33 +146,18 @@ header {
   color: #fffffa;
   text-align: left;
 }
+
 header a {
   color: #fffffa;
   border-bottom: 2px solid #9bafd9;
 }
+
 header h1 {
   color: #fffffa;
   padding: 40px 10%;
   width: 50%;
 }
-@media (max-width: 960px) {
-  header h1 {
-    padding: 40px 10%;
-  }
-}
-@media (max-width: 800px) {
-  header h1 {
-    width: 80%;
-  }
-}
-header p {
-  color: hsla(360, 100%, 100%, 0.7);
-}
-#nav-top {
-  overflow: hidden;
-  border-bottom: 4px solid hsla(360, 100%, 100%, 1);
-  text-transform: uppercase;
-}
+
 header ul {
   margin: 20px 0;
   padding: 0;
@@ -173,10 +167,17 @@ header ul {
   float: left;
   text-align: left;
 }
+
 header ul li {
   display: inline;
   padding-right: 20px;
   list-style: none;
+}
+
+#nav-top {
+  overflow: hidden;
+  border-bottom: 4px solid hsla(360, 100%, 100%, 1);
+  text-transform: uppercase;
 }
 
 header .row, h1 {
@@ -184,8 +185,20 @@ header .row, h1 {
   z-index: 2;
 }
 
-/* Section 1&2
-------------------------------------------------- */
+@media (max-width: 960px) {
+  header h1 {
+    padding: 40px 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  header h1 {
+    width: 80%;
+  }
+}
+
+
+/* Section 1&2 */
 .section-1 {
   background: #e7eff3;
 }
@@ -224,20 +237,6 @@ header .row, h1 {
   font-weight: 700;
   color: hsla(0, 0%, 0%, 0.7) !important;
 }
-.secondary-tab {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  text-align: center;
-}
-.secondary-tab li {
-  white-space: nowrap;
-}
-@media (max-width: 800px) {
-  .secondary-tab {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 .center-content {
   text-align: center;
 }
@@ -248,10 +247,15 @@ header .row, h1 {
 /* Style the tab */
 .secondary-tab {
   overflow: hidden;
-  background-color: #e7eff3;
+  /* background-color: #e7eff3; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  text-align: center;
 }
 .secondary-tab li {
   background-color: inherit;
+  white-space: nowrap;
   padding: 12px 16px;
   float: left;
   border: none;
@@ -265,6 +269,11 @@ header .row, h1 {
 }
 .secondary-tab li.active {
   background-color: #ccc;
+}
+@media (max-width: 800px) {
+  .secondary-tab {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .tabcontent {
   padding: 6px 12px;
@@ -380,8 +389,7 @@ header .row, h1 {
   background-color: #fffffa;
 }
 
-/* Footer
-------------------------------------------------- */
+/* Footer */
 footer {
   background-color: #00458e;
   background-image: linear-gradient(-45deg, #000328, #00458E);
@@ -414,20 +422,9 @@ footer a {
   text-decoration: none;
 }
 
-/* Link underline colors
-------------------------------------------------- */
-a.link-1 {
-  border-bottom: solid 2px #ff6d00;
-}
-a.link-2 {
-  border-bottom: solid 2px #ff7900;
-}
-a.link-3 {
-  border-bottom: solid 2px #ff8500;
-}
-a.link-4 {
-  border-bottom: solid 2px #ff9100;
-}
-a.link-5 {
-  border-bottom: solid 2px #ff9e00;
-}
+/* Link underline colors */
+a.link-1 {border-bottom: solid 2px #ff6d00;}
+a.link-2 {border-bottom: solid 2px #ff7900;}
+a.link-3 {border-bottom: solid 2px #ff8500;}
+a.link-4 {border-bottom: solid 2px #ff9100;}
+a.link-5 {border-bottom: solid 2px #ff9e00;}
