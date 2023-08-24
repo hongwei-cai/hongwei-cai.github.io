@@ -12,15 +12,12 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <title>蔡宏威 &#124; 首頁</title>
   <meta name="description" content='蔡宏威個人網站, 作曲家和程序員'>
   <meta name="keywords" content="蔡宏威,作曲家蔡宏威,蔡宏威個人網站">
   <meta name="author" content='Hongwei "Vincent" Cai'>
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script src="script/tab.js" async></script>
-  <script src="script/accordion.js" async></script>
-  <!-- <script src="script/connection_check.js" async></script> -->
-
 </head>
 <body>
   <header id="home">
@@ -28,10 +25,11 @@
       <div class="row">
         <nav id="nav-top">
           <ul>
-            <li><a class="link-1" href="index.html">en</a></li>
-            <li><a class="link-2" href="#about">簡介</a></li>
-            <li><a class="link-3" href="#works">作品</a></li>
-            <li><a class="link-4" href="#contact">聯繫</a></li>
+            <li class="nav-link"><a class="link-1" href="index.html">en</a></li>
+            <li class="nav-link"><a class="link-2" href="#about">簡介</a></li>
+            <li class="nav-link"><a class="link-3" href="#works">作品</a></li>
+            <li class="nav-link"><a class="link-4" href="#contact">聯繫</a></li>
+            <!-- <li class="nav-link"><a class="link-4" href="#archive">存檔</a></li> -->
           </ul>
         </nav>
       </div>
@@ -62,8 +60,8 @@
       <div class="row">
         <p lang="zh">距離我踏入計算機的世界，已有數年光景。最初，我透過 Max（一種專為音樂和多媒體所設計的可視化編程語言）來創作現場電子音樂的片段。我創作了一首名為《坍塌的殼》的電子音樂作品，它專為低音提琴獨奏以及現場電子音樂而譜寫。這首作品的靈感來自廣義相對論所描繪的「冰凍星」悖論，這個宇宙物理學上的推測激發了我的創作火花。<br>我特地編寫了一套實時聲音採樣的程式，能夠與低音提琴手的演奏互動。透過這交互，我勾勒出一片極具科幻氛圍的音樂風景。隨著一次又一次的程式編寫經驗，我對音樂創作與計算機技術交融的潛力產生了濃厚興趣。我深信，作曲藝術與計算機技術可以攜手並進。音樂的種種構成要素，包括音高結構、音量變化、音符長短、音色變化、速度、律動節奏等，皆能透過計算機技術進行深入分析、處理和組織。<br>事實上，近來越來越多的作曲家與機器學習工程師攜手合作，致力於進一步發展運用人工智能創作音樂的技術。這股潮流將帶動音樂創作領域邁向更為精彩紛呈的未來。</p>
         <ul>
-          <li><a href="doc/cai_cv.pdf" target="_blank">CV</a></li>
-          <li><a href="doc/vincent_cai_resumé.pdf" target="_blank">簡歷</a></li>
+          <li class="horinzontal"><a href="doc/cai_cv.pdf" target="_blank">CV</a></li>
+          <li class="horinzontal"><a href="doc/vincent_cai_resumé.pdf" target="_blank">簡歷</a></li>
         </ul>
       </div>
     </article>
@@ -81,8 +79,8 @@
         <p lang="zh">從文學、哲學、宗教、繪畫、科學和技術中獲得靈感，蔡宏威的音樂一直展現對使用各種聲音形式來傳達敘事想像的特別偏愛，特別關注愛和人性的主題。他為各種樂團創作音樂，巧妙地融合傳統的作曲技巧與獨特的音效，為我們這個時代創造出獨特的聲音。通過與大學音樂家和世界級藝術家的合作，他的作品展示了複雜的概念化和實際執行能力。</p>
         <p lang="zh"><b>蔡宏威</b>是一位中國作曲家和鋼琴家，目前正在愛荷華大學攻讀音樂作曲的博士學位。他的作品曾經被<em>Ensemble Dal Niente</em>、<em>密歇根大學 Contemporary Directions Ensemble</em>、<em>辛辛那提大學音樂學院室內樂團</em>、<em>愛荷華大學新音樂中心</em>、<em>Ensemble Accroche Note</em>和<em>JACK Quartet</em>等音樂團體演出。他的音樂作品曾在包括2021年作曲家協會全國線上會議、中西部研究生音樂聯合會（2021年在密歇根大學）、中西部作曲家研討會（2017年在密歇根大學、2018年在辛辛那提大學音樂學院和2019年在印第安那大學）、以及中西部大學生作曲家交流會（2018年在愛荷華大學）等場所演出。蔡宏威畢業於中國瀋陽音樂學院，獲得作曲與作曲技術理論學士學位，並在俄克拉荷馬城大學獲得作曲碩士學位。</p>
         <ul>
-          <li><a href="doc/cai_bio.pdf" target="_blank">簡介</a></li>
-          <li><a href="doc/hongwei_cai_artistic_resumé.pdf" target="_blank">藝術家簡歷</a></li>
+          <li class="horinzontal"><a href="doc/cai_bio.pdf" target="_blank">簡介</a></li>
+          <li class="horinzontal"><a href="doc/hongwei_cai_artistic_resumé.pdf" target="_blank">藝術家簡歷</a></li>
         </ul>
       </div>
     </article>
@@ -94,15 +92,15 @@
       <div class="row">
         <p><a class="button" href="#home">&#8593; 首頁</a></p>
         <h2>作品精選</h2>
-        <ul class="secondary-tab" id="space-between-tab">
-          <li class="tablinks" onmouseover="openTab(event, 'tab-1')" id="defaultOpen">《從虛無到虛無》</li>
-          <li class="tablinks" onmouseover="openTab(event, 'tab-2')">《坍塌的殼》</li>
-          <li class="tablinks" onmouseover="openTab(event, 'tab-3')">《風雨中綻放的罌粟花》</li>
-          <li class="tablinks" onmouseover="openTab(event, 'tab-4')">《至彼岸》</li>
+        <ul class="tab-list">
+          <li class="active"><a class="tab-control" href="#tab-1">《從虛無到虛無》</a></li>
+          <li><a class="tab-control" href="#tab-2">《坍塌的殼》</a></li>
+          <li><a class="tab-control" href="#tab-3">《風雨中綻放的罌粟花》</a></li>
+          <li><a class="tab-control" href="#tab-4">《至彼岸》</a></li>
         </ul>
       </div>
       <div class="row">
-        <div class="tabcontent" id="tab-1">
+        <div class="tab-panel active" id="tab-1">
           <br>
           <h3 lang="zh" class="center-content">《從虛無到虛無》</h3>
           <div class="col-1">
@@ -129,7 +127,7 @@
           <p class="center-content"><a class="button" href="#works">了解更多</a></p>
         </div>
 
-        <div class="tabcontent" id="tab-2">
+        <div class="tab-panel" id="tab-2">
           <br>
           <h3 lang="zh" class="center-content">《坍塌的殼》</h3>
           <div class="col-1">
@@ -152,7 +150,7 @@
           <p class="center-content"><a class="button" href="#works">了解更多</a></p>
         </div>
 
-        <div class="tabcontent" id="tab-3">
+        <div class="tab-panel" id="tab-3">
           <br>
           <h3 class="center-content">《風雨中綻放的罌粟花》</h3>
           <div class="col-1">
@@ -184,7 +182,7 @@
           <p class="center-content"><a class="button" href="#works">了解更多</a></p>
         </div>
         
-        <div class="tabcontent" id="tab-4">
+        <div class="tab-panel" id="tab-4">
           <br>
           <h3 class="center-content">《至彼岸》</h3>
           <div class="col-1">
@@ -227,313 +225,353 @@
       <div class="row">
         <p><a class="button" href="#home">&#8593; 首頁</a></p>
         <h2 lang="zh">作品列表</h2>
-        <ul class="secondary-tab">
-          <li lang="zh">時間倒序</li>
-          <!-- <li lang="zh">拼音順序</li>
-          <li lang="zh">編制類別</li> -->
+        <ul>
+          <li class="horinzontal" lang="zh">現代音樂</li>
+          <li class="horinzontal" lang="zh">原聲音樂</li>
+          <li class="horinzontal" lang="zh">電子音樂</li>
         </ul>
         <br>
         <h3 lang="zh" class="center-content">按時間倒序排列</h3>
       </div>
-      <div class="row">
-        <button class="workTitle"><em>《通向第三極之路》</em> (2023) 小交響樂</button>
-        <div class="workContent">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+      <div class="row" id="buttons"></div>
+      <div class="row" id="work-list">
+        <ul class="accordion">
+          <li>
+            <button class="accordion-control" data-tags="大型樂團"><em>《通向第三極之路》</em> (2023) 小交響樂</button>
+            <div class="accordion-panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《在祂的羽翼下》</em> (2021) 女聲三部無伴奏合唱</button>
-        <div class="workContent">
-          <p class="center-content"><strong>Offertory/Communion</strong><br>for the First Sunday of Lent: “Scapulis Suis”- Psalm 90: 4-5</p>
-          <p><i>Scapulis suis obumbrabit tibi Dominus, et sub pennis ejus sperabis, scuto circumdabit te veritas ejus.</i></p>
-          <p>translation:<br><i>The Lord will overshadow you with his pinions, and you will find refuge under his wings. His faithfulness will encompass you with a ​shield.</i></p>
-          <p>Duration: c. 4 min</p>
-        </div>
-        <button class="workTitle"><em>《满二十三周岁》</em> (2021) 混聲無伴奏合唱</button>
-        <div class="workContent">
-          <p><strong><em>《满二十三周岁》</em></strong> 是一首基於約翰·彌爾頓的同名十四行詩創作的混聲無伴奏合唱。</p>
-          <p>Duration: ca. 5 min</p>
-          <p class="center-content"><b>MIDI 文件</b><br>
-            <audio controls>
-            <source src="audios/how_soon_hath_time.mp3"></audio></p>
-          <div class="center-content">
-            <h4>《满二十三周岁》</h4>
-            <p lang="zh">約翰·米爾頓 (1608-1674)</p>
-            <p lang="zh">时间啊，这窃取青春的巧贼，竟这样<br>
-            迅速地用双翅运走了我的廿三岁，<br>
-            我的逝水年华匆匆地过去，<br>
-            但我的暮春却不会开花结蕾；<br>
-            我的面貌也许还不够苍老，<br>
-            但是我确已接近成人的年岁，<br>
-            我的内心更显得不够成熟，<br>
-            远不如那些及早立业的同辈；<br>
-            但不管我成熟迟早，或快或慢，<br>
-            这和我既定的命运——那时间与天意<br>
-            要领我达到的命运（无论是贵贱）<br>
-            仍然会严格符合，不爽毫厘。<br>
-            只要我好自为之，一切都还是<br>
-            在我的严厉主人监督的眼里。</p>
-          </div>
-          <a class="pdf" href="doc/how_soon_hath_time.pdf" target="_blank">PDF</a>
-        </div>
-
-        <button class="workTitle"><em>《從虛無到虛無》</em> (2021) 女高音、長笛和豎琴</button>
-        <div class="workContent">
-          <p><strong><em>《從虛無到虛無》</em></strong> 這是一首以雪萊的詩《奧茲曼迪亞斯》為背景，為女高音、長笛和豎琴而創作的藝術歌曲。<br>
-            「即使在生前獲得至高無上的權力，死後也不過化為一堆塵土」 – Hongwei Cai in March 2021</p>
-          <p>Duration: 9 min</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/WFrOTR8tXII?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="center-content">
-            <h4 lang="zh">奧茲曼迪亞斯</h4>
-            <p lang="zh">珀西·比希·雪萊 (1792-1822)</p>
-            <p lang="zh">我遇見一位來自古國的旅人<br>
-              他説：有兩條巨大的石腿<br>
-              半掩於沙漠之間<br>
-              近旁的沙土中，有一張破碎的石臉<br>
-              抿着嘴，蹙着眉，面孔依舊威嚴<br>
-              想那雕刻者，必定深諳其人情感<br>
-              那神態還留在石頭上<br>
-              而斯人已逝，化作塵煙<br>
-              看那石座上刻着字句：<br>
-              “我是萬王之王，奧茲曼斯迪亞斯<br>
-              功業蓋物，強者折服”<br>
-              此外，蕩然無物<br>
-              廢墟四周，唯餘黃沙莽莽<br>
-              寂寞荒涼，伸展四方</p>
-          </div>
-          <p>The first performance was given by The Ensemble Dal Niente at the University of Iowa School of Music Concert Hall, on April 18, 2021</p>
-          <a class="pdf" href="doc/dal_niente_al_niente.pdf" target="_blank">PDF</a>
-        </div>
-        
-        <button class="workTitle"><em>《坍塌的殼》</em> (2021) 獨奏低音提琴和現場電子音樂</button>
-        <div class="workContent">
-          <p><strong><em>《坍塌的殼》</em></strong> 的靈感源於與廣義相對論預測的「冰凍星」悖論相關的天體物理學猜想。當一顆恆星發生重力坍縮時，內部的時鐘在塵埃層向現有的黑洞坍縮時會變慢。在實際的天體物理情境中，根據外部觀察者的時鐘，物質可以穿過黑洞的事件視界，並不會積聚在黑洞周圍。在這種情況下，當物質朝著黑洞墜落時，對外部觀察者而言，它不會形成「冰凍星」。透過這個作品，我嘗試通過為獨奏者創造多種演奏技法的組合，與有限定的即興演奏，配合一系列的Max程式，來描繪這種現象。</p>
-          <p>Duration: ca. 13-15 min</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/_vHxUGFStTo?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>First Performance:<br>
-          Solo version: by <a href="https://willyager.com/" target="blank">Will Yager</a> at University of Iowa School of Music Concert Hall, on March 28th, 2021<br>
-          With live electronics: by <a href="https://willyager.com/" target="blank">Will Yager</a> at University of Iowa School of Music Concert Hall, on May 9th, 2021</p>
-          <a class="pdf" href="doc/collapsing_shells.pdf" target="_blank">PDF</a>
-        </div>
-
-        <button class="workTitle"><em>《風雨中綻放的罌粟花》</em> (2020) 弦樂四重奏</button>
-        <div class="workContent">
-          <p>
-            罌粟花與沉睡、和平和死亡緊緊聯繫，長久以來一直是陣亡士兵的象徵。我的第二號弦樂四重奏，<strong><em>《風雨中綻放的罌粟花》</em></strong>, 我的第二號弦樂四重奏是對約翰·麥克雷上校的戰爭詩《在佛蘭德斯的田野上》的回應。願世界永遠和平，願你和我的心永遠寧靜......「這首作品獻給那些在戰爭中受難的靈魂」</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/XGA8JzSGyP0?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="center-content">
-            <h4 lang="zh">在法蘭德斯戰場</h4>
-            <p lang="zh">约翰·麦克雷 (1872-1918)</p>
-              <p lang="zh">在法兰德斯战场上 罂束花盛开<br>
-              十字架之间，一排接一排<br>
-              标示着我们断魂之地<br>
-              但雲雀依旧高歌，翱翔在蔚蓝的天上<br>
-              可却难以听见，因为战场上枪炮正响</p>
-              <p lang="zh">我们逝去了，就在几天前<br>
-              我们曾经拥有生命，沐浴曙光又见璀璨夕阳<br>
-              我们爱人也为人所爱，可如今卻倒在<br>
-              法兰德斯战场上</p>
-              <p lang="zh">撿起武器，继续和敌人搏鬥<br>
-              用那颤抖的双手，抛给你們<br>
-              那明亮火炬，请你們将它高举<br>
-              你们若辜负逝去的我们<br>
-              我们将不会安息，尽管罂束花<br>
-              盛开法兰德斯战场</p>
-          </div>
-
-          <p>First performance:<br>
-            by the JACK Quartet, at Merkin Hall NYC on March 10 2021</p>
-            <a class="pdf" href="doc/string_quartet_no2.pdf" target="_blank">PDF</a>
-          </div>
+          <li>
+            <button class="accordion-control" data-tags="合唱"><em>《在祂的羽翼下》</em> (2021) 女聲三部無伴奏合唱</button>
+            <div class="accordion-panel">
+              <p class="center-content"><strong>Offertory/Communion</strong><br>for the First Sunday of Lent: “Scapulis Suis”- Psalm 90: 4-5</p>
+              <p><i>Scapulis suis obumbrabit tibi Dominus, et sub pennis ejus sperabis, scuto circumdabit te veritas ejus.</i></p>
+              <p>translation:<br><i>The Lord will overshadow you with his pinions, and you will find refuge under his wings. His faithfulness will encompass you with a ​shield.</i></p>
+              <p>Duration: c. 4 min</p>
+            </div>
+          </li>
   
-        <button class="workTitle"><em>《脈衝》</em> (2020) 長號獨奏</button>
-        <div class="workContent">
-          <p>This piece was composed for the annual SCI 24+24 concert project.</p>
-          <p>Duration: ca. 5 min</p>
-          <div class="soundcloud-container">
-            <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/919738207&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-          </div>
-          <p>The first performance was given by <a href="http://markrheaume.weebly.com/" target="blank">Mark Rheaume</a> at the University of Iowa School of Music Concert Hall, on November 17, 2020</p>
-          <a class="pdf" href="doc/impulse.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="合唱"><em>《满二十三周岁》</em> (2021) 混聲無伴奏合唱</button>
+            <div class="accordion-panel">
+              <p><strong><em>《满二十三周岁》</em></strong> 是一首基於約翰·彌爾頓的同名十四行詩創作的混聲無伴奏合唱。</p>
+              <p>Duration: ca. 5 min</p>
+              <p class="center-content"><b>MIDI 文件</b><br>
+                <audio controls>
+                <source src="audios/how_soon_hath_time.mp3"></audio></p>
+              <div class="center-content">
+                <h4>《满二十三周岁》</h4>
+                <p lang="zh">約翰·米爾頓 (1608-1674)</p>
+                <p lang="zh">时间啊，这窃取青春的巧贼，竟这样<br>
+                迅速地用双翅运走了我的廿三岁，<br>
+                我的逝水年华匆匆地过去，<br>
+                但我的暮春却不会开花结蕾；<br>
+                我的面貌也许还不够苍老，<br>
+                但是我确已接近成人的年岁，<br>
+                我的内心更显得不够成熟，<br>
+                远不如那些及早立业的同辈；<br>
+                但不管我成熟迟早，或快或慢，<br>
+                这和我既定的命运——那时间与天意<br>
+                要领我达到的命运（无论是贵贱）<br>
+                仍然会严格符合，不爽毫厘。<br>
+                只要我好自为之，一切都还是<br>
+                在我的严厉主人监督的眼里。</p>
+              </div>
+              <a class="pdf" href="doc/how_soon_hath_time.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《動盪》</em> (2020) 單簧管獨奏</button>
-        <div class="workContent">
-          <p><iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/974032150&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>
-          <p><strong><em>《動盪》</em></strong> (2020), 為獨奏單簧管而創作的作品，是對我們在COVID-19大流行期間所經歷的時光的一種反思。我們都經歷了一系列的生活變化和不確定性，這導致了許多負面情緒。我希望我內心的不安能在觀眾中引起共鳴，因為這個作品描述了你、我和整個社會。</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/zD4q-P6XR5w?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>The first performance was given by <a href="https://www.ariannaedvenson.com/" target="blank">Arianna Edvenson</a> At the University of Iowa Voxman Music Building Concert Hall, on September 28, 2020</p>
-          <a class="pdf" href="doc/unrest.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="室內樂"><em>《從虛無到虛無》</em> (2021) 女高音、長笛和豎琴</button>
+            <div class="accordion-panel">
+              <p><strong><em>《從虛無到虛無》</em></strong> 這是一首以雪萊的詩《奧茲曼迪亞斯》為背景，為女高音、長笛和豎琴而創作的藝術歌曲。<br>
+                「即使在生前獲得至高無上的權力，死後也不過化為一堆塵土」 – Hongwei Cai in March 2021</p>
+              <p>Duration: 9 min</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/WFrOTR8tXII?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="center-content">
+                <h4 lang="zh">奧茲曼迪亞斯</h4>
+                <p lang="zh">珀西·比希·雪萊 (1792-1822)</p>
+                <p lang="zh">我遇見一位來自古國的旅人<br>
+                  他説：有兩條巨大的石腿<br>
+                  半掩於沙漠之間<br>
+                  近旁的沙土中，有一張破碎的石臉<br>
+                  抿着嘴，蹙着眉，面孔依舊威嚴<br>
+                  想那雕刻者，必定深諳其人情感<br>
+                  那神態還留在石頭上<br>
+                  而斯人已逝，化作塵煙<br>
+                  看那石座上刻着字句：<br>
+                  “我是萬王之王，奧茲曼斯迪亞斯<br>
+                  功業蓋物，強者折服”<br>
+                  此外，蕩然無物<br>
+                  廢墟四周，唯餘黃沙莽莽<br>
+                  寂寞荒涼，伸展四方</p>
+              </div>
+              <p>The first performance was given by The Ensemble Dal Niente at the University of Iowa School of Music Concert Hall, on April 18, 2021</p>
+              <a class="pdf" href="doc/dal_niente_al_niente.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《光譜研究》</em> (2019) 管弦樂</button>
-        <div class="workContent">
-          <p></p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="獨奏, 電子音樂"><em>《坍塌的殼》</em> (2021) 獨奏低音提琴和現場電子音樂</button>
+            <div class="accordion-panel">
+              <p><strong><em>《坍塌的殼》</em></strong> 的靈感源於與廣義相對論預測的「冰凍星」悖論相關的天體物理學猜想。當一顆恆星發生重力坍縮時，內部的時鐘在塵埃層向現有的黑洞坍縮時會變慢。在實際的天體物理情境中，根據外部觀察者的時鐘，物質可以穿過黑洞的事件視界，並不會積聚在黑洞周圍。在這種情況下，當物質朝著黑洞墜落時，對外部觀察者而言，它不會形成「冰凍星」。透過這個作品，我嘗試通過為獨奏者創造多種演奏技法的組合，與有限定的即興演奏，配合一系列的Max程式，來描繪這種現象。</p>
+              <p>Duration: ca. 13-15 min</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/_vHxUGFStTo?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>First Performance:<br>
+              Solo version: by <a href="https://willyager.com/" target="blank">Will Yager</a> at University of Iowa School of Music Concert Hall, on March 28th, 2021<br>
+              With live electronics: by <a href="https://willyager.com/" target="blank">Will Yager</a> at University of Iowa School of Music Concert Hall, on May 9th, 2021</p>
+              <a class="pdf" href="doc/collapsing_shells.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《飛越風暴》</em> (2019) 小提琴獨奏</button>
-        <div class="workContent">
-          <p>蔡宏威的作品<strong><em>《飛越風暴》</em></strong>展示了小提琴不僅僅是一個技術炫目的樂器，更是情感和敘事的載體。作曲家巧妙地運用泛音賦予音樂一種超凡的質感，喚起神秘和超自然的氛圍，加強了對小鳥在動盪的風暴中旅程的引人入勝的描繪。小提琴特殊演奏技法的獨特運用增添了樂器與混亂對抗的印象，這在強有力的琴弓弓法中表現得淋漓盡致，傳達了一種與風暴抗爭的感覺。值得注意的是，這首作品呈現了靜謐和內省的時刻，為動態範圍和情感的交融作出了貢獻，達到戲劇性的高潮，創造了一次深刻感人且難以忘懷的音樂體驗。作曲家蔡宏威充分運用小提琴的表現能力展示了他的作曲技巧，並突顯了這種受人喜愛的樂器的經久不衰的吸引力。</p>
-          <p>Duration: ca. 9 min</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/cxxwUVrxgY0?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>首演是由張一雪（Yixue Zhang）在2019年11月9日於印第安納大學舉行的中西部作曲家研討會（Midwest Composers Symposium）上呈現。</p>
-          <a class="pdf" href="doc/soaring_over_a_storm.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="室內樂"><em>《風雨中綻放的罌粟花》</em> (2020) 弦樂四重奏</button>
+            <div class="accordion-panel">
+              <p>
+                罌粟花與沉睡、和平和死亡緊緊聯繫，長久以來一直是陣亡士兵的象徵。我的第二號弦樂四重奏，<strong><em>《風雨中綻放的罌粟花》</em></strong>, 我的第二號弦樂四重奏是對約翰·麥克雷上校的戰爭詩《在佛蘭德斯的田野上》的回應。願世界永遠和平，願你和我的心永遠寧靜......「這首作品獻給那些在戰爭中受難的靈魂」</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/XGA8JzSGyP0?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="center-content">
+                <h4 lang="zh">在法蘭德斯戰場</h4>
+                <p lang="zh">约翰·麦克雷 (1872-1918)</p>
+                  <p lang="zh">在法兰德斯战场上 罂束花盛开<br>
+                  十字架之间，一排接一排<br>
+                  标示着我们断魂之地<br>
+                  但雲雀依旧高歌，翱翔在蔚蓝的天上<br>
+                  可却难以听见，因为战场上枪炮正响</p>
+                  <p lang="zh">我们逝去了，就在几天前<br>
+                  我们曾经拥有生命，沐浴曙光又见璀璨夕阳<br>
+                  我们爱人也为人所爱，可如今卻倒在<br>
+                  法兰德斯战场上</p>
+                  <p lang="zh">撿起武器，继续和敌人搏鬥<br>
+                  用那颤抖的双手，抛给你們<br>
+                  那明亮火炬，请你們将它高举<br>
+                  你们若辜负逝去的我们<br>
+                  我们将不会安息，尽管罂束花<br>
+                  盛开法兰德斯战场</p>
+              </div>
+    
+              <p>First performance:<br>
+                by the JACK Quartet, at Merkin Hall NYC on March 10 2021</p>
+                <a class="pdf" href="doc/string_quartet_no2.pdf" target="_blank">PDF</a>
+              </div>
+            </li>
 
-        <button class="workTitle"><em>《黃色風暴》</em> (2019) 大提琴獨奏</button>
-        <div class="workContent">
-          <figure>
-            <img src="img/tempest_in_yellow.jpeg" width="100%" alt="Temp&ecirc;te en jaune"><p><em>&#169; <a href="https://collections.artsmia.org/art/102931/tempest-in-yellow-dorothea-tanning" target="_blank">Estate Dorothea Tanning / Artists Rights Society (ARS), New York</a></em></p>
-            <figcaption class="center-content"><em>Tempest in Yellow</em>, 1956<br>Dorothea Tanning<br>Oil on canvas</figcaption>
-          </figure>
-          <p>
-            受到多蘿西婭·坦寧（Dorothea Tanning）的畫作《Temp&ecirc;te en jaune》的啟發，我的獨奏大提琴作品<strong><em>《黃色風暴》</em></strong>是我在研究這幅畫作時的一種反思，該畫作位於明尼阿波利斯藝術學院。乍一看，畫中的細節並不容易辨識，除了遠處的女人臉部。從碎裂的黃色畫布中浮現出的四個主要部分，模糊地相互連接，形成一個圓圈，彷彿揭示了畫布後面隱藏的東西。通過靜態的框架，我能夠感知到溫暖色調中隱藏的動態形象和豐富能量。這幅畫作通過觀眾的體驗傳達意義，這與我們聆聽音樂的體驗相似：擁有不同個人經歷的人以不同方式詮釋音樂作品。對於我的作品，當我凝視著這幅畫時，主題、主題和手勢都來自於我的想像，我嘗試以一種與坦寧原畫相對應的方式呈現音樂。</p>
-          <p>Duration: 5 min</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/_e1BcTtPL08?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>首次演出由伊娃·理查茲（Eva Richards）在愛荷華大學音樂學院音樂廳於2019年9月8日。</p>
-          <a class="pdf" href="doc/tempest_in_yellow.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="獨奏"><em>《脈衝》</em> (2020) 長號獨奏</button>
+            <div class="accordion-panel">
+              <p>This piece was composed for the annual SCI 24+24 concert project.</p>
+              <p>Duration: ca. 5 min</p>
+              <div class="soundcloud-container">
+                <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/919738207&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+              <p>The first performance was given by <a href="http://markrheaume.weebly.com/" target="blank">Mark Rheaume</a> at the University of Iowa School of Music Concert Hall, on November 17, 2020</p>
+              <a class="pdf" href="doc/impulse.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《至彼岸》</em> (2018) 弦樂四重奏</button>
-        <div class="workContent">
-          <p>部分靈感來自邁克爾·傑克遜的歌曲《Heal the World》，我的弦樂四重奏<strong><em>《至彼岸》</em></strong>是一場虛幻的旅程，尋找一個「地方」，在那裡沒有傷害，悲傷或恐懼。音樂一開始呈現出哀嚎般的樣子，節奏緩慢，不斷改變音色，帶著陰暗的情緒。在突如其來的閃光——隱喻為希望的曙光——之後，音樂轉變，喻為向神祈禱，詢問從「此岸」到達「彼岸」的方式。在一段艱難的跋涉後，這個「地方」意外地出現了。它是寧靜而和平的，就像一片美麗的仙境，鳥兒歌唱，花朵芬芳。一切事物都秉承以美而創造，切生靈都存在於和諧共存之中...<br>這首音樂獻給世界上所有美好的事物。</p>
-          <div class="soundcloud-container">
-            <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/540808617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-          </div>
-          <p>The recording from a reading session by the JACK Quartet on Dec. 5, 2018, at the Concert Hall in the University of Iowa School of Music.</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/phybaNhzG7A?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>The piece received its first performance with the JACK Quartet on Mar.13, 2019, at the Concert Hall in the University of Iowa School of Music.</p>
-          <a class="pdf" href="doc/string_quartet_no1.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="獨奏"><em>《動盪》</em> (2020) 單簧管獨奏</button>
+            <div class="accordion-panel">
+              <p><iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/974032150&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>
+              <p><strong><em>《動盪》</em></strong> (2020), 為獨奏單簧管而創作的作品，是對我們在COVID-19大流行期間所經歷的時光的一種反思。我們都經歷了一系列的生活變化和不確定性，這導致了許多負面情緒。我希望我內心的不安能在觀眾中引起共鳴，因為這個作品描述了你、我和整個社會。</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/zD4q-P6XR5w?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>The first performance was given by <a href="https://www.ariannaedvenson.com/" target="blank">Arianna Edvenson</a> At the University of Iowa Voxman Music Building Concert Hall, on September 28, 2020</p>
+              <a class="pdf" href="doc/unrest.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
+  
+          <li>
+            <button class="accordion-control" data-tags="大型樂團"><em>《光譜研究》</em> (2019) 管弦樂</button>
+            <div class="accordion-panel">
+              <p></p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《君自故鄉來》</em> (2018) 戲劇女高音</button>
-        <div class="workContent">
-          <br>
-          <div class="soundcloud-container">
-            <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/616176363&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-          </div>
-          <div class="center-content">
-            <h4 lang="zh">《雜詩三首·其二》</h4>
-            <p lang="zh"><i>王維(692—761 A.D.)</i><br>
-              君自故鄉來，<br>
-              應知故鄉事。<br>
-              來日綺窗前，<br>
-              寒梅著花未？</p>
-          </div>
-          <p><b>Performance history:</b></p>
-          <p>Society of Composers, Iowa Student Chapter<br>
-            <a href="https://www.anikakildegaard.com/" target="blank"><b>Anika Kildegaard</b>, Voice</a><br>
-            University of Iowa Voxman Music Building, Concert Hall<br>
-            September 9, 2018</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="獨奏"><em>《飛越風暴》</em> (2019) 小提琴獨奏</button>
+            <div class="accordion-panel">
+              <p>蔡宏威的作品<strong><em>《飛越風暴》</em></strong>展示了小提琴不僅僅是一個技術炫目的樂器，更是情感和敘事的載體。作曲家巧妙地運用泛音賦予音樂一種超凡的質感，喚起神秘和超自然的氛圍，加強了對小鳥在動盪的風暴中旅程的引人入勝的描繪。小提琴特殊演奏技法的獨特運用增添了樂器與混亂對抗的印象，這在強有力的琴弓弓法中表現得淋漓盡致，傳達了一種與風暴抗爭的感覺。值得注意的是，這首作品呈現了靜謐和內省的時刻，為動態範圍和情感的交融作出了貢獻，達到戲劇性的高潮，創造了一次深刻感人且難以忘懷的音樂體驗。作曲家蔡宏威充分運用小提琴的表現能力展示了他的作曲技巧，並突顯了這種受人喜愛的樂器的經久不衰的吸引力。</p>
+              <p>Duration: ca. 9 min</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/cxxwUVrxgY0?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>首演是由張一雪（Yixue Zhang）在2019年11月9日於印第安納大學舉行的中西部作曲家研討會（Midwest Composers Symposium）上呈現。</p>
+              <a class="pdf" href="doc/soaring_over_a_storm.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《時刻 II》</em> (2017) 管弦樂</button>
-        <div class="workContent">
-          <p>《時刻》的三管管弦樂重新配器版</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="獨奏"><em>《黃色風暴》</em> (2019) 大提琴獨奏</button>
+            <div class="accordion-panel">
+              <figure>
+                <img src="img/tempest_in_yellow.jpeg" width="100%" alt="Temp&ecirc;te en jaune"><p><em>&#169; <a href="https://collections.artsmia.org/art/102931/tempest-in-yellow-dorothea-tanning" target="_blank">Estate Dorothea Tanning / Artists Rights Society (ARS), New York</a></em></p>
+                <figcaption class="center-content"><em>Tempest in Yellow</em>, 1956<br>Dorothea Tanning<br>Oil on canvas</figcaption>
+              </figure>
+              <p>
+                受到多蘿西婭·坦寧（Dorothea Tanning）的畫作《Temp&ecirc;te en jaune》的啟發，我的獨奏大提琴作品<strong><em>《黃色風暴》</em></strong>是我在研究這幅畫作時的一種反思，該畫作位於明尼阿波利斯藝術學院。乍一看，畫中的細節並不容易辨識，除了遠處的女人臉部。從碎裂的黃色畫布中浮現出的四個主要部分，模糊地相互連接，形成一個圓圈，彷彿揭示了畫布後面隱藏的東西。通過靜態的框架，我能夠感知到溫暖色調中隱藏的動態形象和豐富能量。這幅畫作通過觀眾的體驗傳達意義，這與我們聆聽音樂的體驗相似：擁有不同個人經歷的人以不同方式詮釋音樂作品。對於我的作品，當我凝視著這幅畫時，主題、主題和手勢都來自於我的想像，我嘗試以一種與坦寧原畫相對應的方式呈現音樂。</p>
+              <p>Duration: 5 min</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/_e1BcTtPL08?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>首次演出由伊娃·理查茲（Eva Richards）在愛荷華大學音樂學院音樂廳於2019年9月8日。</p>
+              <a class="pdf" href="doc/tempest_in_yellow.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
+          
+          <li>
+            <button class="accordion-control" data-tags="室內樂"><em>《至彼岸》</em> (2018) 弦樂四重奏</button>
+            <div class="accordion-panel">
+              <p>部分靈感來自邁克爾·傑克遜的歌曲《Heal the World》，我的弦樂四重奏<strong><em>《至彼岸》</em></strong>是一場虛幻的旅程，尋找一個「地方」，在那裡沒有傷害，悲傷或恐懼。音樂一開始呈現出哀嚎般的樣子，節奏緩慢，不斷改變音色，帶著陰暗的情緒。在突如其來的閃光——隱喻為希望的曙光——之後，音樂轉變，喻為向神祈禱，詢問從「此岸」到達「彼岸」的方式。在一段艱難的跋涉後，這個「地方」意外地出現了。它是寧靜而和平的，就像一片美麗的仙境，鳥兒歌唱，花朵芬芳。一切事物都秉承以美而創造，切生靈都存在於和諧共存之中...<br>這首音樂獻給世界上所有美好的事物。</p>
+              <div class="soundcloud-container">
+                <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/540808617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+              <p>The recording from a reading session by the JACK Quartet on Dec. 5, 2018, at the Concert Hall in the University of Iowa School of Music.</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/phybaNhzG7A?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>The piece received its first performance with the JACK Quartet on Mar.13, 2019, at the Concert Hall in the University of Iowa School of Music.</p>
+              <a class="pdf" href="doc/string_quartet_no1.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《時刻》</em> (2017, rev. 2018) 室內交響樂</button>
-        <div class="workContent">
-          <p><strong><em>《時刻》</em></strong> 與我多年來一直纏繞心頭的幾個想法有關。這些場景在音樂上通過創造特定的情緒、感覺和氛圍來描繪，以快速且無縫連接的方式呈現。作品以F音開始，逐漸引入強烈的爆炸性音效。在經過三次後，音樂以柔和的固定節奏重新開始，並在不斷增加的緊張感下進行幾次發展，直到達到樂曲的高潮，之後回到相同的F音，彷彿呼應了作品的開始。</p>
-          <p><b>Performance history:</b></p>
-          <p>2018 Midwest Composers Symposium: Opening Concert<br>
-          <a href="https://www.ccocincinnati.org/" target="blank"><b>CCM Chamber Orchestra</b></a><br>
-          Aik Khai Pung, director<br>
-          University of Cincinnati College-Conservatory of Music Patricia Corbett Theatre<br>
-          October 19, 2018</p>
-          <p>The 9th Annual Exchange of Midwest Collegiate Composers Festival of New Music (premiere)<br>
-          <a href="https://www.cnm.uiowa.edu/" target="blank"><b>Center for New Music</b></a><br>
-          <a href="http://davidgompper.com/" target="blank">David Gompper</a>, director<br>
-          University of Iowa Voxman Music Building, Concert Hall<br>
-          April 6, 2018</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="人聲"><em>《君自故鄉來》</em> (2018) 戲劇女高音</button>
+            <div class="accordion-panel">
+              <br>
+              <div class="soundcloud-container">
+                <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/616176363&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+              <div class="center-content">
+                <h4 lang="zh">《雜詩三首·其二》</h4>
+                <p lang="zh"><i>王維(692—761 A.D.)</i><br>
+                  君自故鄉來，<br>
+                  應知故鄉事。<br>
+                  來日綺窗前，<br>
+                  寒梅著花未？</p>
+              </div>
+              <p><b>Performance history:</b></p>
+              <p>Society of Composers, Iowa Student Chapter<br>
+                <a href="https://www.anikakildegaard.com/" target="blank"><b>Anika Kildegaard</b>, Voice</a><br>
+                University of Iowa Voxman Music Building, Concert Hall<br>
+                September 9, 2018</p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《夜曲》</em> (2017) 單簧管、大提琴和鋼琴</button>
-        <div class="workContent">
-          <p>去年九月初，我發現自己在午夜時分往窗外望，尋找夜晚的和諧之美。微風輕輕搖動著草叢和樹枝，天空中星星的光芒不時閃爍。這首作品的靈感正是來自那個夜晚：安靜但並不死寂，黑暗但並不因此爾缺乏色彩。</p>
-          <p><b>Performance history:</b></p>
-          <p><a href="https://www.accrochenote.com/" target="blank"><b>The Tnsemble Accroshe Note</b></a><br>
-            Armand Angster, clarinet<br>
-            Christophe Beau, violoncello<br>
-            Wilhem Latchoumia, piano<br>
-            University of Iowa Voxman Music Building, Concert Hall<br>
-            April 27, 2019</p>
-          <p>2017 Midwest Composers Symposium (premiere)<br>
-            Mauricio Silva, clarinet<br>
-            Craig Hultgren, cello<br>
-            Hongwei Cai, piano<br>
-            The University of Michigan Moore Building, McIntosh Theatre<br>
-            November 11, 2017</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="大型樂團"><em>《時刻 II》</em> (2017) 管弦樂</button>
+            <div class="accordion-panel">
+              <p>《時刻》的三管管弦樂重新配器版</p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>《當陰影籠罩》</em> (2016) 弦樂四重奏</button>
-        <div class="workContent">
-          <p>《當陰影籠罩》（<em>A Shadow Shrouded</em></strong>）的靈感來自斯韋特拉娜·亞歷山德羅芙娜·阿萊克謝耶維奇所著的書籍《切爾諾貝利的聲音》（<em>Voices from Chernobyl</em>）。書中的幾個令人印象深刻的時刻被選擇出來，成為推動音樂情節的線索。在這首作品中，您將會聽到「逼近的噩夢」、「孤獨的獨白」、「苦難者的呼喚」、「中斷的記憶」和「死亡的陰影」等片段。</p>
-          <p>First performance:<br>
-            <a href="https://www.jackquartet.com" target="blank"><b>The JACK Quartet</b></a><br>
-            Christopher Otto & Austin Wulliman, violins<br>
-            John Pickford Richards, viola<br>
-            Jay Campbell, cello<br>
-            The University of Iowa Voxman Music Building, Concert Hall<br>
-            December 8, 2016</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="大型樂團"><em>《時刻》</em> (2017, rev. 2018) 室內交響樂</button>
+            <div class="accordion-panel">
+              <p><strong><em>《時刻》</em></strong> 與我多年來一直纏繞心頭的幾個想法有關。這些場景在音樂上通過創造特定的情緒、感覺和氛圍來描繪，以快速且無縫連接的方式呈現。作品以F音開始，逐漸引入強烈的爆炸性音效。在經過三次後，音樂以柔和的固定節奏重新開始，並在不斷增加的緊張感下進行幾次發展，直到達到樂曲的高潮，之後回到相同的F音，彷彿呼應了作品的開始。</p>
+              <p><b>Performance history:</b></p>
+              <p>2018 Midwest Composers Symposium: Opening Concert<br>
+              <a href="https://www.ccocincinnati.org/" target="blank"><b>CCM 室內樂 Orchestra</b></a><br>
+              Aik Khai Pung, director<br>
+              University of Cincinnati College-Conservatory of Music Patricia Corbett Theatre<br>
+              October 19, 2018</p>
+              <p>The 9th Annual Exchange of Midwest Collegiate Composers Festival of New Music (premiere)<br>
+              <a href="https://www.cnm.uiowa.edu/" target="blank"><b>Center for New Music</b></a><br>
+              <a href="http://davidgompper.com/" target="blank">David Gompper</a>, director<br>
+              University of Iowa Voxman Music Building, Concert Hall<br>
+              April 6, 2018</p>
+            </div>
+          </li>
+
+          <li>
+            <button class="accordion-control" data-tags="室內樂"><em>《夜曲》</em> (2017) 單簧管、大提琴和鋼琴</button>
+            <div class="accordion-panel">
+              <p>去年九月初，我發現自己在午夜時分往窗外望，尋找夜晚的和諧之美。微風輕輕搖動著草叢和樹枝，天空中星星的光芒不時閃爍。這首作品的靈感正是來自那個夜晚：安靜但並不死寂，黑暗但並不因此爾缺乏色彩。</p>
+              <p><b>Performance history:</b></p>
+              <p><a href="https://www.accrochenote.com/" target="blank"><b>The Tnsemble Accroshe Note</b></a><br>
+                Armand Angster, clarinet<br>
+                Christophe Beau, violoncello<br>
+                Wilhem Latchoumia, piano<br>
+                University of Iowa Voxman Music Building, Concert Hall<br>
+                April 27, 2019</p>
+              <p>2017 Midwest Composers Symposium (premiere)<br>
+                Mauricio Silva, clarinet<br>
+                Craig Hultgren, cello<br>
+                Hongwei Cai, piano<br>
+                The University of Michigan Moore Building, McIntosh Theatre<br>
+                November 11, 2017</p>
+            </div>
+          </li>
+
+          <li>
+            <button class="accordion-control" data-tags="室內樂"><em>《當陰影籠罩》</em> (2016) 弦樂四重奏</button>
+            <div class="accordion-panel">
+              <p>《當陰影籠罩》（<em>A Shadow Shrouded</em></strong>）的靈感來自斯韋特拉娜·亞歷山德羅芙娜·阿萊克謝耶維奇所著的書籍《切爾諾貝利的聲音》（<em>Voices from Chernobyl</em>）。書中的幾個令人印象深刻的時刻被選擇出來，成為推動音樂情節的線索。在這首作品中，您將會聽到「逼近的噩夢」、「孤獨的獨白」、「苦難者的呼喚」、「中斷的記憶」和「死亡的陰影」等片段。</p>
+              <p>First performance:<br>
+                <a href="https://www.jackquartet.com" target="blank"><b>The JACK Quartet</b></a><br>
+                Christopher Otto & Austin Wulliman, violins<br>
+                John Pickford Richards, viola<br>
+                Jay Campbell, cello<br>
+                The University of Iowa Voxman Music Building, Concert Hall<br>
+                December 8, 2016</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </article>
   </section>
 
-  <!-- Contacts -->
+  <!-- Archive -->
   <section class="section-1" id="contact">
+  <!-- <section class="section-1" id="archive"> -->
     <article class="container">
       <div class="row">
         <p><a class="button" href="#home">&#8593; 首頁</a></p>
+        <!-- <h2>存檔</h2> -->
         <h2>聯繫方式</h2>
       </div>
       <div class="row">
@@ -543,8 +581,6 @@
           Office: 201N<br>
           Iowa City, IA 52242<br>
           USA</p>
-          <p><a href="mailto:vincent@hongweicai.com?subject=Reaching%20Out&body=Hi%20Vincent&#44;%0A">&#9993; 電郵我</a><br>
-          &#9743; (424) 888-2757</p>
       </div>
     </article>
   </section>
@@ -560,12 +596,20 @@
             <li><a class="link-4" href="https://github.com/hongwei-cai" target="_blank">GitHub</a></li>
             <li><a class="link-5" href="https://www.linkedin.com/in/hongwei-cai/" target="_blank">LinkedIn</a></li>
           </ul>
-          <p id="copyright">Handcrafted by <em>H. Vincent Cai</em><br>
+          <p id="copyright"><a href="mailto:vincent@hongweicai.com?subject=Reaching%20Out&body=Hi%20Vincent&#44;%0A">&#9993; 電郵我</a><br>
+          Handcrafted by <em>H. Vincent Cai</em><br>
             Thanks for visiting<br>
             &#169; Copyright 2021 - &#x221e;</p>
         </nav>
       </div>
     </article>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="script/jquery-3.7.0.js"><\/script>')</script>
+  <script src="script/effects.js" async></script>
+  <script src="script/tabPanels.js" async></script>
+  <script src="script/filter-tags.js" async></script>
+  <script src="script/accordion.js" async></script>
+  <!-- <script src="script/connection_check.js" async></script> -->
 </body>
 </html>

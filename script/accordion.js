@@ -2,26 +2,20 @@
 Accordion effects on work list
 __________________________________________________ */
 
-let workHeading = document.querySelectorAll(".workTitle");
-let workPanel = document.querySelectorAll(".workContent");
+$(document).ready(function() {
+  $('.accordion').on('click', '.accordion-control', function(e){ // When clicked
+    e.preventDefault(); // Prevent default action of button
 
-for (let i = 0; i < workHeading.length; i++) {
-  workHeading[i].onclick = function() {
-    if (this.nextElementSibling.style.maxHeight) {
-      hidePanels();
-    } else {
-      showPanel(this);
-    }
-  };
-}
-function showPanel(elem) {
-  hidePanels();
-  elem.classList.add("active");
-  elem.nextElementSibling.style.maxHeight = elem.nextElementSibling.scrollHeight + "px";
-}
-function hidePanels() {
-  for (let i = 0; i < workPanel.length; i++) {
-    workPanel[i].style.maxHeight = null;
-    workHeading[i].classList.remove("active");
-  }
-}
+    // Close all open panels except the clicked one
+    $('.accordion-panel')
+      .not($(this).next('.accordion-panel'))
+      .filter(':visible')
+      .slideUp();
+
+    // Toggle the clicked panel
+    $(this) // Get the element the user clicked on
+      .next('.accordion-panel') // Select following panel
+      .not(':animated') // If it is not currently animating
+      .slideToggle(); // Use slide toggle to show or hide it
+  });
+});

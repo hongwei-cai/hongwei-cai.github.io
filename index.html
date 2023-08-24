@@ -12,17 +12,13 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <title>Hongwei Cai &#124; Home</title>
   <meta name="description" content='Hongwei Cai, Official Website, composer and programmer'>
   <meta name="keywords" content="Hongwei Cai,Hongwei Cai composer,Hongwei Cai Official Website,Vincent Cai">
   <meta name="author" content='Hongwei "Vincent" Cai'>
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script src="script/tab.js" async></script>
-  <script src="script/accordion.js" async></script>
-  <!-- <script src="script/sort.js" async></script> -->
-  <!-- <script src="script/connection_check.js" async></script> -->
-  <!-- <script src="script/test.js" async></script> -->
-  
+  <!-- <link rel="stylesheet" href="css/c12.css" type="text/css"> -->
 </head>
 <body>
   <header id="home">
@@ -30,10 +26,11 @@
       <div class="row">
         <nav id="nav-top">
           <ul>
-            <li><a class="link-1" href="home.html">中文</a></li>
-            <li><a class="link-2" href="#about">About</a></li>
-            <li><a class="link-3" href="#works">Works</a></li>
-            <li><a class="link-4" href="#contact">Contact</a></li>
+            <li class="nav-link"><a class="link-1" href="home.html">中文</a></li>
+            <li  class="nav-link"><a class="link-2" href="#about">About</a></li>
+            <li  class="nav-link"><a class="link-3" href="#works">Works</a></li>
+            <!-- <li  class="nav-link"><a class="link-4" href="#archive">Archive</a></li> -->
+            <li  class="nav-link"><a class="link-4" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -64,8 +61,8 @@
       <div class="row">
         <p>My first exposure to programming came several years ago as I programmed several patches for live-electronic music using Max, a visual programming language for music and multimedia. One of my recent electronic music compositions is entitled “Collapsing Shells” for solo double bass and live electronics. It was based on astrophysical conjectures related to the “frozen star” paradox as predicted by the theory of General Relativity. I programmed a real-time sound sampling program to interact with the bassist’s playing, creating a sci-fi atmosphere. Through this initial experience and subsequent experiences, I have become intrigued with the prospect and potential of integrating music composition with computer technologies. I believe that composition and technology can go hand-in-hand because the components of a piece of music – pitch materials, dynamics, duration of notes, articulations, tempi, pulses, and rhythms are data that can be analyzed, processed, and systemized using computer technologies. In fact, an increasing number of composers collaborate with machine learning engineers to explore the possibilities of composing music with AI. </p>
         <ul>
-          <li><a href="doc/cai_cv.pdf" target="_blank">CV</a></li>
-          <li><a href="doc/vincent_cai_resumé.pdf" target="_blank">Resum&eacute;</a></li>
+          <li class="horinzontal"><a href="doc/cai_cv.pdf" target="_blank">CV</a></li>
+          <li class="horinzontal"><a href="doc/vincent_cai_resumé.pdf" target="_blank">Resum&eacute;</a></li>
         </ul>
       </div>
     </article>
@@ -83,8 +80,8 @@
         <p>Drawing inspiration from literature, philosophy, religion, paintings, science, and technology, Hongwei Cai’s music has always shown a particular fondness for using various forms of sonic representation to convey narrative imagination, with a special focus on themes of love and humanity. He has composed music for a wide range of ensembles, skillfully blending idiomatic writing with unique sound effects to create a distinctive voice in our generation. Through collaborations with both university-level musicians and world-class artists, his compositions showcase a complex conceptualization and practical execution.</p>
         <p><b>Hongwei Cai</b>, a Chinese composer and pianist, is currently a Ph.D. candidate in music composition at the University of Iowa. His works have been performed by the <em>Ensemble Dal Niente</em>, the <em>University of Michigan’s Contemporary Directions Ensemble</em>, the <em>University of Cincinnati College-Conservatory of Music Chamber Orchestra</em>, the <em>University of Iowa Center for New Music</em>, the <em>Ensemble Accroche Note</em>, and the <em>JACK Quartet</em>. His music has been presented at venues including the 2021 Society of Composers Online National Conference, the Midwest Graduate Music Consortium (University of Michigan in 2021), the Midwest Composers’ Symposium (University of Michigan in 2017, University of Cincinnati College-Conservatory of Music in 2018 and University of Indiana in 2019), and the Exchange of Midwest Collegiate Composers (University of Iowa in 2018). Hongwei Cai received a MM degree in composition from Oklahoma City University, and a Bachelor of Literature in composition and theory from Shenyang Conservatory of Music in China.</p>
         <ul>
-          <li><a href="doc/cai_bio.pdf" target="_blank">Biography</a></li>
-          <li><a href="doc/hongwei_cai_artistic_resumé.pdf" target="_blank">Artistic Resum&eacute;</a></li>
+          <li class="horinzontal"><a href="doc/cai_bio.pdf" target="_blank">Biography</a></li>
+          <li class="horinzontal"><a href="doc/hongwei_cai_artistic_resumé.pdf" target="_blank">Artistic Resum&eacute;</a></li>
         </ul>
       </div>
     </article>
@@ -96,15 +93,15 @@
       <div class="row">
         <p><a class="button" href="#home">&#8593; home</a></p>
         <h2>Selected Works</h2>
-        <ul class="secondary-tab">
-          <li class="tablinks" onmouseover="openTab(event, 'tab-1')" id="defaultOpen">Dal niente, al niente</li>
-          <li class="tablinks" onmouseover="openTab(event, 'tab-2')">Collapsing Shells</li>
-          <li class="tablinks" onmouseover="openTab(event, 'tab-3')">String Quartet No.2</li>
-          <li class="tablinks" onmouseover="openTab(event, 'tab-4')">String Quartet No.1</li>
+        <ul class="tab-list">
+          <li class="active"><a class="tab-control" href="#tab-1">Dal niente, al niente</a></li>
+          <li><a class="tab-control" href="#tab-2">Collapsing Shells</a></li>
+          <li><a class="tab-control" href="#tab-3">String Quartet No.2</a></li>
+          <li><a class="tab-control" href="#tab-4">String Quartet No.1</a></li>
         </ul>
       </div>
       <div class="row">
-        <div class="tabcontent" id="tab-1">
+        <div class="tab-panel active" id="tab-1">
           <br>
           <h3 class="center-content">Dal niente, al niente</h3>
           <div class="col-1">
@@ -151,7 +148,7 @@
           <p class="center-content"><a class="button" href="#works">more details</a></p>
         </div>
 
-        <div class="tabcontent" id="tab-2">
+        <div class="tab-panel" id="tab-2">
           <br>
           <h3 class="center-content">Collapsing Shells</h3>
           <div class="col-1">
@@ -173,7 +170,7 @@
           <p class="center-content"><a class="button" href="#works">more details</a></p>
         </div>
 
-        <div class="tabcontent" id="tab-3">
+        <div class="tab-panel" id="tab-3">
           <br>
           <h3 class="center-content">Poppies bursting into bloom in the wind and rain</h3>
           <div class="col-1">
@@ -206,7 +203,7 @@
           <p class="center-content"><a class="button" href="#works">more details</a></p>
         </div>
 
-        <div class="tabcontent" id="tab-4">
+        <div class="tab-panel" id="tab-4">
           <br>
           <h3 class="center-content">Attainment of the other shore</h3>
           <div class="col-1">
@@ -248,306 +245,324 @@
       <div class="row">
         <p><a class="button" href="#home">&#8593; home</a></p>
         <h2>Works</h2>
-        <!-- <ul class="secondary-tab">
-          <li class="tablinks" id="reset-order" onmouseover="openTab(event, 'order-1')" id="defaultOpen">Chronological</li>
-          <li class="tablinks" id="sort-accending" onmouseover="openTab(event, 'order-2')">Alphabetical</li>
-          <li>Category</li>
-        </ul>
-      <div class="row">
-        <div class="tabcontent" id="order-1">
-          <br>
-          <h3 class="center-content">List by Reverse Chronological</h3>
-        </div>
-        <div class="tabcontent" id="order-2">
-          <br>
-          <h3 class="center-content">List by Alphabetical</h3>
-        </div>
-      </div> -->
-
-        <!-- <button class="work-order" id="reset-order">Chronological</button>
-        <button class="work-order" id="sort-accending">Alphabetical</button> -->
-        <ul class="secondary-tab">
-          <li id="reset-order">Chronological</li>
-          <li id="sort-accending">Alphabetical</li>
-          <li>Category</li>
+        <ul>
+          <li class="horinzontal">Contemporary</li>
+          <li class="horinzontal">Acoustical</li>
+          <li class="horinzontal">Electronic</li>
         </ul>
         <br>
         <h3 class="center-content">List by Reverse Chronological</h3>
       </div>
-      
+      <div class="row" id="buttons"></div>
       <div class="row" id="work-list">
-        <button class="workTitle"><em>Path to the Third Pole</em> (2023) for Sinfonietta</button>
-        <div class="workContent">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+        <ul class="accordion">
+          <li>
+            <button class="accordion-control" data-tags="Ensemble"><em>Path to the Third Pole</em> (2023) for Sinfonietta</button>
+            <div class="accordion-panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>Scapulis Suis</em> (2021) for SSA choir a cappella</button>
-        <div class="workContent">
-          <p class="center-content"><strong>Offertory/Communion</strong><br>for the First Sunday of Lent: “Scapulis Suis”- Psalm 90: 4-5</p>
-          <p><i>Scapulis suis obumbrabit tibi Dominus, et sub pennis ejus sperabis, scuto circumdabit te veritas ejus.</i></p>
-          <p>translation:<br><i>The Lord will overshadow you with his pinions, and you will find refuge under his wings. His faithfulness will encompass you with a ​shield.</i></p>
-          <p>Duration: c. 4 min</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Choral"><em>Scapulis Suis</em> (2021) for SSA choir a cappella</button>
+            <div class="accordion-panel">
+              <p class="center-content"><strong>Offertory/Communion</strong><br>for the First Sunday of Lent: “Scapulis Suis”- Psalm 90: 4-5</p>
+              <p><i>Scapulis suis obumbrabit tibi Dominus, et sub pennis ejus sperabis, scuto circumdabit te veritas ejus.</i></p>
+              <p>translation:<br><i>The Lord will overshadow you with his pinions, and you will find refuge under his wings. His faithfulness will encompass you with a ​shield.</i></p>
+              <p>Duration: c. 4 min</p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>How Soon Hath Time</em> (2021) for mix choir divisi a cappella</button>
-        <div class="workContent">
-          <p><strong><em>How Soon Hath Time</em></strong> is a work for mixed chorus divisi a cappella on John Milton’s sonnet</p>
-          <p>Duration: ca. 5 min</p>
-          <p class="center-content"><b>MIDI File</b><br>
-            <audio controls>
-            <source src="audios/how_soon_hath_time.mp3"></audio></p>
-          <div class="center-content">
-            <h4>How Soon Hath Time</h4>
-            <p>John Milton (1608-1674)</p>
-            <p>How soon hath time, the subtle thief of youth,<br>Stol'n on his wing my three and twentieth year!<br>My hasting days fly on with full career,<br>But my late spring no bud or blossom shew'th.<br> Perhaps my semblance might deceive the truth,<br> That I to manhood am arrived so near,<br>And inward ripeness doth much less appear,<br> That some more timely-happy spirits endu'th.<br>Yet be it less or more, or soon or slow,<br>It shall be still in strictest measure even<br> To that same lot, however mean or high,<br>Toward which Time leads me, and the will of Heaven;<br>All is, if I have grace to use it so,<br> As ever in my great Taskmaster's eye.</p>
-          </div>
-          <a class="pdf" href="doc/how_soon_hath_time.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Choral"><em>How Soon Hath Time</em> (2021) for mix choir divisi a cappella</button>
+            <div class="accordion-panel">
+              <p><strong><em>How Soon Hath Time</em></strong> is a work for mixed chorus divisi a cappella on John Milton’s sonnet</p>
+              <p>Duration: ca. 5 min</p>
+              <p class="center-content"><b>MIDI File</b><br>
+                <audio controls>
+                <source src="audios/how_soon_hath_time.mp3"></audio></p>
+              <div class="center-content">
+                <h4>How Soon Hath Time</h4>
+                <p>John Milton (1608-1674)</p>
+                <p>How soon hath time, the subtle thief of youth,<br>Stol'n on his wing my three and twentieth year!<br>My hasting days fly on with full career,<br>But my late spring no bud or blossom shew'th.<br> Perhaps my semblance might deceive the truth,<br> That I to manhood am arrived so near,<br>And inward ripeness doth much less appear,<br> That some more timely-happy spirits endu'th.<br>Yet be it less or more, or soon or slow,<br>It shall be still in strictest measure even<br> To that same lot, however mean or high,<br>Toward which Time leads me, and the will of Heaven;<br>All is, if I have grace to use it so,<br> As ever in my great Taskmaster's eye.</p>
+              </div>
+              <a class="pdf" href="doc/how_soon_hath_time.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle" id="tablink-1"><em>Dal niente, al niente</em> (2021) for soprano, flute, and harp</button>
-        <div class="workContent">
-          <p><strong><em>Dal Niente, al niente</em></strong> is a song set to Shelley’s <i>“Ozymandias”</i> for soprano, flute, and harp.<br>
-          “Even with the prospect of achieving supreme power in life, one becomes nothing more than a heap of dust after death.” – Hongwei Cai in March 2021</p>
-          <p>Duration: 9 min</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/WFrOTR8tXII?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="center-content">
-            <h4>Ozymandias</h4>
-            <p>by Percy Bysshe Shelley (1792-1822)</p>
-            <p>I met a traveller from an antique land,<br>Who said—‘Two vast and trunkless legs of stone<br>Stand in the desert … Near them, on the sand,<br>Half sunk a shattered visage lies, whose frown,<br>And wrinkled lip, and sneer of cold command,<br>Tell that its sculptor well those passions read<br>Which yet survive, stamped on these lifeless things,<br>The hand that mocked them, and the heart that fed;<br>And on the pedestal, these words appear:<br>“My name is Ozymandias, King of Kings,<br>Look on my Works ye Mighty, and despair!”<br>Nothing beside remains. Round the decay<br>Of that colossal Wreck, boundless and bare<br>The lone and level sands stretch far away.’—</p>
-          </div>
-          <p>The first performance was given by The Ensemble Dal Niente at the University of Iowa School of Music Concert Hall, on April 18, 2021</p>
-          <a class="pdf" href="doc/dal_niente_al_niente.pdf" target="_blank">PDF</a>
-        </div>
-        
-        <button class="workTitle" id="tablink-2"><em>Collapsing Shells</em> (2021) for solo double bass and live electronics</button>
-        <div class="workContent">
-          <p><strong><em>Collapsing Shells</em></strong> was inspired by astrophysical conjectures related to the “frozen star” paradox, a phenomenon predicted by General Relativity. During the gravitational collapsing of a star, the clock inside the shell slows down as the dust shells collapse toward the existing black hole. In real astrophysical settings, matter can pass through the event horizon of the black hole according to the clock of the external observer and will not accumulate around the black hole. In this case, when matter falls towards a black hole, it will not form a “frozen star” to the external observer. Through this work, I attempt to depict the phenomenon by creating several combinations of gestures for the soloist with guided improvisations and a series of Max patches.</p>
-          <p>Duration: ca. 13-15 min</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/_vHxUGFStTo?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>First Performance:<br>
-          Solo version: by <a href="https://willyager.com/" target="blank">Will Yager</a> at University of Iowa School of Music Concert Hall, on March 28th, 2021<br>
-          With live electronics: by <a href="https://willyager.com/" target="blank">Will Yager</a> at University of Iowa School of Music Concert Hall, on May 9th, 2021</p>
-          <a class="pdf" href="doc/collapsing_shells.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control"  data-tags="Chamber"><em>Dal niente, al niente</em> (2021) for soprano, flute, and harp</button>
+            <div class="accordion-panel">
+              <p><strong><em>Dal Niente, al niente</em></strong> is a song set to Shelley’s <i>“Ozymandias”</i> for soprano, flute, and harp.<br>
+              “Even with the prospect of achieving supreme power in life, one becomes nothing more than a heap of dust after death.” – Hongwei Cai in March 2021</p>
+              <p>Duration: 9 min</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/WFrOTR8tXII?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="center-content">
+                <h4>Ozymandias</h4>
+                <p>by Percy Bysshe Shelley (1792-1822)</p>
+                <p>I met a traveller from an antique land,<br>Who said—‘Two vast and trunkless legs of stone<br>Stand in the desert … Near them, on the sand,<br>Half sunk a shattered visage lies, whose frown,<br>And wrinkled lip, and sneer of cold command,<br>Tell that its sculptor well those passions read<br>Which yet survive, stamped on these lifeless things,<br>The hand that mocked them, and the heart that fed;<br>And on the pedestal, these words appear:<br>“My name is Ozymandias, King of Kings,<br>Look on my Works ye Mighty, and despair!”<br>Nothing beside remains. Round the decay<br>Of that colossal Wreck, boundless and bare<br>The lone and level sands stretch far away.’—</p>
+              </div>
+              <p>The first performance was given by The Ensemble Dal Niente at the University of Iowa School of Music Concert Hall, on April 18, 2021</p>
+              <a class="pdf" href="doc/dal_niente_al_niente.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle" id="tablink-3"><em>Poppies bursting into bloom in the wind and rain</em> (2020) for string quartet</button>
-        <div class="workContent">
-          <p>Poppies, tied deeply to sleep, peace, and death, has long been a symbol to fallen soldiers. My second string quartet, <strong><em>Poppies bursting into bloom in the wind and rain</em></strong>, is a response to Lieutenant-Colonel John McCrae’s war poem In Flanders Fields. May the world be at peace forever and may you and my heart be at peace forever. The work is dedicated to those spirits who have suffered from war.</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/XGA8JzSGyP0?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="center-content">
-            <h4>In Flanders Fields</h4>
-            <p>by John McCrae (1872-1918)</p>
-            <p>In Flanders fields the poppies blow<br>
-              Between the crosses, row on row,<br>
-              That mark our place; and in the sky<br>
-              The larks, still bravely singing, fly<br>
-              Scarce heard amid the guns below.</p>
-              <p>We are the Dead. Short days ago<br>
-              We lived, felt dawn, saw sunset glow,<br>
-              Loved and were loved, and now we lie,<br>
-              In Flanders fields.</p>
-              <p>Take up our quarrel with the foe:<br>
-              To you from failing hands we throw<br>
-              The torch; be yours to hold it high.<br>
-              If ye break faith with us who die<br>
-              We shall not sleep, though poppies grow<br>
-              In Flanders fields.</p>
-          </div>
+          <li>
+            <button class="accordion-control"  data-tags="Solo, Electronic"><em>Collapsing Shells</em> (2021) for solo double bass and live electronics</button>
+            <div class="accordion-panel">
+              <p><strong><em>Collapsing Shells</em></strong> was inspired by astrophysical conjectures related to the “frozen star” paradox, a phenomenon predicted by General Relativity. During the gravitational collapsing of a star, the clock inside the shell slows down as the dust shells collapse toward the existing black hole. In real astrophysical settings, matter can pass through the event horizon of the black hole according to the clock of the external observer and will not accumulate around the black hole. In this case, when matter falls towards a black hole, it will not form a “frozen star” to the external observer. Through this work, I attempt to depict the phenomenon by creating several combinations of gestures for the soloist with guided improvisations and a series of Max patches.</p>
+              <p>Duration: ca. 13-15 min</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/_vHxUGFStTo?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>First Performance:<br>
+              Solo version: by <a href="https://willyager.com/" target="blank">Will Yager</a> at University of Iowa School of Music Concert Hall, on March 28th, 2021<br>
+              With live electronics: by <a href="https://willyager.com/" target="blank">Will Yager</a> at University of Iowa School of Music Concert Hall, on May 9th, 2021</p>
+              <a class="pdf" href="doc/collapsing_shells.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-          <p>First performance:<br>
-          by the JACK Quartet, at Merkin Hall NYC on March 10 2021</p>
-          <a class="pdf" href="doc/string_quartet_no2.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control"  data-tags="Chamber"><em>Poppies bursting into bloom in the wind and rain</em> (2020) for string quartet</button>
+            <div class="accordion-panel">
+              <p>Poppies, tied deeply to sleep, peace, and death, has long been a symbol to fallen soldiers. My second string quartet, <strong><em>Poppies bursting into bloom in the wind and rain</em></strong>, is a response to Lieutenant-Colonel John McCrae’s war poem In Flanders Fields. May the world be at peace forever and may you and my heart be at peace forever. The work is dedicated to those spirits who have suffered from war.</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/XGA8JzSGyP0?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="center-content">
+                <h4>In Flanders Fields</h4>
+                <p>by John McCrae (1872-1918)</p>
+                <p>In Flanders fields the poppies blow<br>
+                  Between the crosses, row on row,<br>
+                  That mark our place; and in the sky<br>
+                  The larks, still bravely singing, fly<br>
+                  Scarce heard amid the guns below.</p>
+                  <p>We are the Dead. Short days ago<br>
+                  We lived, felt dawn, saw sunset glow,<br>
+                  Loved and were loved, and now we lie,<br>
+                  In Flanders fields.</p>
+                  <p>Take up our quarrel with the foe:<br>
+                  To you from failing hands we throw<br>
+                  The torch; be yours to hold it high.<br>
+                  If ye break faith with us who die<br>
+                  We shall not sleep, though poppies grow<br>
+                  In Flanders fields.</p>
+              </div>
+    
+              <p>First performance:<br>
+              by the JACK Quartet, at Merkin Hall NYC on March 10 2021</p>
+              <a class="pdf" href="doc/string_quartet_no2.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>Impulse</em> (2020) for solo trombone</button>
-        <div class="workContent">
-          <p>This piece was composed for the annual SCI 24+24 concert project.</p>
-          <p>Duration: ca. 5 min</p>
-          <div class="soundcloud-container">
-            <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/919738207&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-          </div>
-          <p>The first performance was given by <a href="http://markrheaume.weebly.com/" target="blank">Mark Rheaume</a> at the University of Iowa School of Music Concert Hall, on November 17, 2020</p>
-          <a class="pdf" href="doc/impulse.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Solo"><em>Impulse</em> (2020) for solo trombone</button>
+            <div class="accordion-panel">
+              <p>This piece was composed for the annual SCI 24+24 concert project.</p>
+              <p>Duration: ca. 5 min</p>
+              <div class="soundcloud-container">
+                <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/919738207&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+              <p>The first performance was given by <a href="http://markrheaume.weebly.com/" target="blank">Mark Rheaume</a> at the University of Iowa School of Music Concert Hall, on November 17, 2020</p>
+              <a class="pdf" href="doc/impulse.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>Unrest</em> (2020) for solo clarinet</button>
-        <div class="workContent">
-          <p><iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/974032150&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>
-          <p><strong><em>Unrest</em></strong> (2020), for solo clarinet, is a reflection of the time we are currently experiencing during the COVID-19 pandemic. We all undergo a series of life changes and uncertainty, which results in many negative emotions. I hope the restlessness that has haunted my mind resonates among many in the audience, because this piece describes you, me, and our entire society.</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/zD4q-P6XR5w?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>The first performance was given by <a href="https://www.ariannaedvenson.com/" target="blank">Arianna Edvenson</a> At the University of Iowa Voxman Music Building Concert Hall, on September 28, 2020</p>
-          <a class="pdf" href="doc/unrest.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Solo"><em>Unrest</em> (2020) for solo clarinet</button>
+            <div class="accordion-panel">
+              <p><iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/974032150&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></p>
+              <p><strong><em>Unrest</em></strong> (2020), for solo clarinet, is a reflection of the time we are currently experiencing during the COVID-19 pandemic. We all undergo a series of life changes and uncertainty, which results in many negative emotions. I hope the restlessness that has haunted my mind resonates among many in the audience, because this piece describes you, me, and our entire society.</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/zD4q-P6XR5w?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>The first performance was given by <a href="https://www.ariannaedvenson.com/" target="blank">Arianna Edvenson</a> At the University of Iowa Voxman Music Building Concert Hall, on September 28, 2020</p>
+              <a class="pdf" href="doc/unrest.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>Spectrum Study</em> (2019) for orchestra</button>
-        <div class="workContent">
-          <p></p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Ensemble"><em>Spectrum Study</em> (2019) for orchestra</button>
+            <div class="accordion-panel">
+              <p></p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>Soaring Over a Storm</em> (2019) for solo violin</button>
-        <div class="workContent">
-          <p>Hongwei Cai’s composition <strong><em>Soaring Over a Storm</em></strong> showcases the violin as more than a technically proficient instrument, but as a conduit for the emotional and narrative arc of the piece. The composer effectively employs harmonics to imbue the music with an ethereal quality, evoking a mystical and supernatural atmosphere that enhances the evocative representation of the bird’s journey through a turbulent storm. The violin’s unique utilization adds to the overall impression of the instrument as if engaged in a struggle against the chaos, evident in the forceful bow strokes that convey a sense of battling against the storm. Notably, the piece offers moments of stillness and introspection, contributing to a dynamic range and interplay of emotions that culminates in a dramatic climax, creating a deeply moving and unforgettable musical experience. Cai’s proficiency in fully utilizing the expressive capabilities of the violin demonstrates his compositional skill and highlights the enduring appeal of this beloved instrument.</p>
-          <p>Duration: ca. 9 min</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/cxxwUVrxgY0?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>The first performance was given by Yixue Zhang at the Indiana University on November 9, 2019 during the Midwest Composers Symposium.</p>
-          <a class="pdf" href="doc/soaring_over_a_storm.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Solo"><em>Soaring Over a Storm</em> (2019) for solo violin</button>
+            <div class="accordion-panel">
+              <p>Hongwei Cai’s composition <strong><em>Soaring Over a Storm</em></strong> showcases the violin as more than a technically proficient instrument, but as a conduit for the emotional and narrative arc of the piece. The composer effectively employs harmonics to imbue the music with an ethereal quality, evoking a mystical and supernatural atmosphere that enhances the evocative representation of the bird’s journey through a turbulent storm. The violin’s unique utilization adds to the overall impression of the instrument as if engaged in a struggle against the chaos, evident in the forceful bow strokes that convey a sense of battling against the storm. Notably, the piece offers moments of stillness and introspection, contributing to a dynamic range and interplay of emotions that culminates in a dramatic climax, creating a deeply moving and unforgettable musical experience. Cai’s proficiency in fully utilizing the expressive capabilities of the violin demonstrates his compositional skill and highlights the enduring appeal of this beloved instrument.</p>
+              <p>Duration: ca. 9 min</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/cxxwUVrxgY0?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>The first performance was given by Yixue Zhang at the Indiana University on November 9, 2019 during the Midwest Composers Symposium.</p>
+              <a class="pdf" href="doc/soaring_over_a_storm.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>Tempest in Yellow</em> (2019) for solo cello</button>
-        <div class="workContent">
-          <figure>
-            <img src="img/tempest_in_yellow.jpeg" width="100%" alt="Temp&ecirc;te en jaune"><p><em>&#169; <a href="https://collections.artsmia.org/art/102931/tempest-in-yellow-dorothea-tanning" target="_blank">Estate Dorothea Tanning / Artists Rights Society (ARS), New York</a></em></p>
-            <figcaption class="center-content"><em>Tempest in Yellow</em>, 1956<br>Dorothea Tanning<br>Oil on canvas</figcaption>
-          </figure>
-          <p>Inspired by Dorothea Tanning’s painting Temp&ecirc;te en jaune, my solo cello piece <strong><em>Tempest in Yellow</em></strong> is a reflection while studying the painting, which is found in the Minneapolis Institute of Art. At first glance, the details in the painting were not easy to make out, except for the foreshortened woman’s face. Four major parts, unveiled from the fragmented yellow canvas, hazily connected one with another, creating a circle as if revealing something hidden behind the canvas. Through its static frame, I perceive a dynamic image and abundant energy hidden within the warm tones. The painting conveys meaning through the viewer’s experience, which is similar to our experience listening to music: people with different personal experiences interpret musical works differently. With regard to my composition, motifs, themes, and gestures came from my imagination when gazing at the painting, and I attempt to present the music in a way that corresponds with Tanning’s original painting.</p>
-          <p>Duration: 5 min</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/_e1BcTtPL08?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>The first performance was given by Eva Richards at the University of Iowa School of Music Concert Hall, on September 8, 2019</p>
-          <a class="pdf" href="doc/tempest_in_yellow.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Solo"><em>Tempest in Yellow</em> (2019) for solo cello</button>
+            <div class="accordion-panel">
+              <figure>
+                <img src="img/tempest_in_yellow.jpeg" width="100%" alt="Temp&ecirc;te en jaune"><p><em>&#169; <a href="https://collections.artsmia.org/art/102931/tempest-in-yellow-dorothea-tanning" target="_blank">Estate Dorothea Tanning / Artists Rights Society (ARS), New York</a></em></p>
+                <figcaption class="center-content"><em>Tempest in Yellow</em>, 1956<br>Dorothea Tanning<br>Oil on canvas</figcaption>
+              </figure>
+              <p>Inspired by Dorothea Tanning’s painting Temp&ecirc;te en jaune, my solo cello piece <strong><em>Tempest in Yellow</em></strong> is a reflection while studying the painting, which is found in the Minneapolis Institute of Art. At first glance, the details in the painting were not easy to make out, except for the foreshortened woman’s face. Four major parts, unveiled from the fragmented yellow canvas, hazily connected one with another, creating a circle as if revealing something hidden behind the canvas. Through its static frame, I perceive a dynamic image and abundant energy hidden within the warm tones. The painting conveys meaning through the viewer’s experience, which is similar to our experience listening to music: people with different personal experiences interpret musical works differently. With regard to my composition, motifs, themes, and gestures came from my imagination when gazing at the painting, and I attempt to present the music in a way that corresponds with Tanning’s original painting.</p>
+              <p>Duration: 5 min</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/_e1BcTtPL08?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>The first performance was given by Eva Richards at the University of Iowa School of Music Concert Hall, on September 8, 2019</p>
+              <a class="pdf" href="doc/tempest_in_yellow.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle" id="tablink-4"><em>Attainment of the other shore</em> (2018) for string quartet</button>
-        <div class="workContent">
-          <p>Partly inspired by Michael Jackson’s song Heal the World, my string quartet <strong><em>Attainment of the other shore</em></strong> is an imaginary journey searching for a “place” where there is no damage or hurt, sorrow or fear. The music begins moaning-like and is slow-paced, constantly changing timbre with a dark expression. After a sudden flash — a metaphor for the dawn of hope—, the music shifts, sending a signal to God asking a way to travel from shore to shore. After a difficult trek, the “place” appears unexpectedly. It is quiet and peaceful, like a beautiful meadow, birds singing and with flowers fragrant. Everything is created in beauty and exists in harmonious coexistence.<br>The music is dedicated to all the beautiful things in the world.</p>
-          <div class="soundcloud-container">
-            <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/540808617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-          </div>
-          <p>The recording from a reading session by the JACK Quartet on Dec. 5, 2018, at the Concert Hall in the University of Iowa School of Music.</p>
-          <div class="youtube-container">
-            <iframe
-              src="https://www.youtube.com/embed/phybaNhzG7A?rel=0" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              allowfullscreen>
-            </iframe>
-          </div>
-          <p>The piece received its first performance with the JACK Quartet on Mar.13, 2019, at the Concert Hall in the University of Iowa School of Music.</p>
-          <a class="pdf" href="doc/string_quartet_no1.pdf" target="_blank">PDF</a>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Chamber"><em>Attainment of the other shore</em> (2018) for string quartet</button>
+            <div class="accordion-panel">
+              <p>Partly inspired by Michael Jackson’s song Heal the World, my string quartet <strong><em>Attainment of the other shore</em></strong> is an imaginary journey searching for a “place” where there is no damage or hurt, sorrow or fear. The music begins moaning-like and is slow-paced, constantly changing timbre with a dark expression. After a sudden flash — a metaphor for the dawn of hope—, the music shifts, sending a signal to God asking a way to travel from shore to shore. After a difficult trek, the “place” appears unexpectedly. It is quiet and peaceful, like a beautiful meadow, birds singing and with flowers fragrant. Everything is created in beauty and exists in harmonious coexistence.<br>The music is dedicated to all the beautiful things in the world.</p>
+              <div class="soundcloud-container">
+                <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/540808617&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+              <p>The recording from a reading session by the JACK Quartet on Dec. 5, 2018, at the Concert Hall in the University of Iowa School of Music.</p>
+              <div class="youtube-container">
+                <iframe
+                  src="https://www.youtube.com/embed/phybaNhzG7A?rel=0" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <p>The piece received its first performance with the JACK Quartet on Mar.13, 2019, at the Concert Hall in the University of Iowa School of Music.</p>
+              <a class="pdf" href="doc/string_quartet_no1.pdf" target="_blank">PDF</a>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>You Came from Our Hometown</em> (2018) for soprano</button>
-        <div class="workContent">
-          <br>
-          <div class="soundcloud-container">
-            <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/616176363&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-          </div>
-          <div class="center-content">
-            <h4 lang="zh">《雜詩三首·其二》</h4>
-            <p lang="zh"><i>王維(692—761 A.D.)</i><br>
-              君自故鄉來，<br>
-              應知故鄉事。<br>
-              來日綺窗前，<br>
-              寒梅著花未？</p>
-          </div>
-          <p><b>Performance history:</b></p>
-          <p>Society of Composers, Iowa Student Chapter<br>
-            <a href="https://www.anikakildegaard.com/" target="blank"><b>Anika Kildegaard</b>, Voice</a><br>
-            University of Iowa Voxman Music Building, Concert Hall<br>
-            September 9, 2018</p>
-        </div>
-        
-        <button class="workTitle"><em>Moments II</em> (2017) for Orchestra</button>
-        <div class="workContent">
-          <p></p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Vocal"><em>You Came from Our Hometown</em> (2018) for soprano</button>
+            <div class="accordion-panel">
+              <br>
+              <div class="soundcloud-container">
+                <iframe width="100%" height="140" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/616176363&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+              <div class="center-content">
+                <h4 lang="zh">《雜詩三首·其二》</h4>
+                <p lang="zh"><i>王維(692—761 A.D.)</i><br>
+                  君自故鄉來，<br>
+                  應知故鄉事。<br>
+                  來日綺窗前，<br>
+                  寒梅著花未？</p>
+              </div>
+              <p><b>Performance history:</b></p>
+              <p>Society of Composers, Iowa Student Chapter<br>
+                <a href="https://www.anikakildegaard.com/" target="blank"><b>Anika Kildegaard</b>, Voice</a><br>
+                University of Iowa Voxman Music Building, Concert Hall<br>
+                September 9, 2018</p>
+            </div>
+          </li>
+          
+          <li>
+            <button class="accordion-control" data-tags="Ensemble"><em>Moments II</em> (2017) for Orchestra</button>
+            <div class="accordion-panel">
+              <p></p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>Moments</em> (2017, rev. 2018) for Chamber Orchestra</button>
-        <div class="workContent">
-          <p><strong><em>Moments</em></strong> related to a couple of ideas that have haunted my mind for years. These scenes, which are depicted musically by creating certain kind of moods, feelings, and atmospheres, are presented quickly and connected seamlessly. The piece begins with the pitch F and gradually introduces a striking and exploding gesture. After three times, the music restarts with a soft ostinato and undergoes a couple of developments as the tension continuously buildst o the climax, after which returns to the same pitch F as an echo of the beginning.</p>
-          <p><b>Performance history:</b></p>
-          <p>2018 Midwest Composers Symposium: Opening Concert<br>
-          <a href="https://www.ccocincinnati.org/" target="blank"><b>CCM Chamber Orchestra</b></a><br>
-          Aik Khai Pung, director<br>
-          University of Cincinnati College-Conservatory of Music Patricia Corbett Theatre<br>
-          October 19, 2018</p>
-          <p>The 9th Annual Exchange of Midwest Collegiate Composers Festival of New Music (premiere)<br>
-          <a href="https://www.cnm.uiowa.edu/" target="blank"><b>Center for New Music</b></a><br>
-          <a href="http://davidgompper.com/" target="blank">David Gompper</a>, director<br>
-          University of Iowa Voxman Music Building, Concert Hall<br>
-          April 6, 2018</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Ensemble"><em>Moments</em> (2017, rev. 2018) for Chamber Orchestra</button>
+            <div class="accordion-panel">
+              <p><strong><em>Moments</em></strong> related to a couple of ideas that have haunted my mind for years. These scenes, which are depicted musically by creating certain kind of moods, feelings, and atmospheres, are presented quickly and connected seamlessly. The piece begins with the pitch F and gradually introduces a striking and exploding gesture. After three times, the music restarts with a soft ostinato and undergoes a couple of developments as the tension continuously buildst o the climax, after which returns to the same pitch F as an echo of the beginning.</p>
+              <p><b>Performance history:</b></p>
+              <p>2018 Midwest Composers Symposium: Opening Concert<br>
+              <a href="https://www.ccocincinnati.org/" target="blank"><b>CCM Chamber Orchestra</b></a><br>
+              Aik Khai Pung, director<br>
+              University of Cincinnati College-Conservatory of Music Patricia Corbett Theatre<br>
+              October 19, 2018</p>
+              <p>The 9th Annual Exchange of Midwest Collegiate Composers Festival of New Music (premiere)<br>
+              <a href="https://www.cnm.uiowa.edu/" target="blank"><b>Center for New Music</b></a><br>
+              <a href="http://davidgompper.com/" target="blank">David Gompper</a>, director<br>
+              University of Iowa Voxman Music Building, Concert Hall<br>
+              April 6, 2018</p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>Nocturne</em> (2017) for clarinet, cello and piano</button>
-        <div class="workContent">
-          <p>Early last September, I found my self looking out of a window at mid-night and finding beatuy in the harmonious night. The breeze gently swayed the grass and twigs, and the light of stars in the sky flickered from time to time. This piece is inspired by that evening: quiet but not silent, dark but not for lack of brightness.</p>
-          <p><b>Performance history:</b></p>
-          <p><a href="https://www.accrochenote.com/" target="blank"><b>The Tnsemble Accroshe Note</b></a><br>
-            Armand Angster, clarinet<br>
-            Christophe Beau, violoncello<br>
-            Wilhem Latchoumia, piano<br>
-            University of Iowa Voxman Music Building, Concert Hall<br>
-            April 27, 2019</p>
-          <p>2017 Midwest Composers Symposium (premiere)<br>
-            Mauricio Silva, clarinet<br>
-            Craig Hultgren, cello<br>
-            Hongwei Cai, piano<br>
-            The University of Michigan Moore Building, McIntosh Theatre<br>
-            November 11, 2017</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Chamber"><em>Nocturne</em> (2017) for clarinet, cello and piano</button>
+            <div class="accordion-panel">
+              <p>Early last September, I found my self looking out of a window at mid-night and finding beatuy in the harmonious night. The breeze gently swayed the grass and twigs, and the light of stars in the sky flickered from time to time. This piece is inspired by that evening: quiet but not silent, dark but not for lack of brightness.</p>
+              <p><b>Performance history:</b></p>
+              <p><a href="https://www.accrochenote.com/" target="blank"><b>The Tnsemble Accroshe Note</b></a><br>
+                Armand Angster, clarinet<br>
+                Christophe Beau, violoncello<br>
+                Wilhem Latchoumia, piano<br>
+                University of Iowa Voxman Music Building, Concert Hall<br>
+                April 27, 2019</p>
+              <p>2017 Midwest Composers Symposium (premiere)<br>
+                Mauricio Silva, clarinet<br>
+                Craig Hultgren, cello<br>
+                Hongwei Cai, piano<br>
+                The University of Michigan Moore Building, McIntosh Theatre<br>
+                November 11, 2017</p>
+            </div>
+          </li>
 
-        <button class="workTitle"><em>A Shadow Shrouded</em> (2016) for string quartet</button>
-        <div class="workContent">
-          <p><strong><em>A Shadow Shrouded</em></strong> was inspired by a book "Voices from Chernobyl" by Svetlana Alexandrovna Alex. ievich. Several impressive moments in the book were selected and as a clue for propelling the plot of the music. In this piece, you wil hear "nightmare approaching' "solitary monolog", "sufferer's calling" "interrupted memory", and "shadowof death'.</p>
-          <p>First performance:<br>
-            <a href="https://www.jackquartet.com" target="blank"><b>The JACK Quartet</b></a><br>
-            Christopher Otto & Austin Wulliman, violins<br>
-            John Pickford Richards, viola<br>
-            Jay Campbell, cello<br>
-            The University of Iowa Voxman Music Building, Concert Hall<br>
-            December 8, 2016</p>
-        </div>
+          <li>
+            <button class="accordion-control" data-tags="Chamber"><em>A Shadow Shrouded</em> (2016) for string quartet</button>
+            <div class="accordion-panel">
+              <p><strong><em>A Shadow Shrouded</em></strong> was inspired by a book "Voices from Chernobyl" by Svetlana Alexandrovna Alex. ievich. Several impressive moments in the book were selected and as a clue for propelling the plot of the music. In this piece, you wil hear "nightmare approaching' "solitary monolog", "sufferer's calling" "interrupted memory", and "shadowof death'.</p>
+              <p>First performance:<br>
+                <a href="https://www.jackquartet.com" target="blank"><b>The JACK Quartet</b></a><br>
+                Christopher Otto & Austin Wulliman, violins<br>
+                John Pickford Richards, viola<br>
+                Jay Campbell, cello<br>
+                The University of Iowa Voxman Music Building, Concert Hall<br>
+                December 8, 2016</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </article>
   </section>
 
-  <!-- Contacts -->
+  <!-- Contact -->
   <section class="section-1" id="contact">
     <article class="container">
       <div class="row">
         <p><a class="button" href="#home">&#8593; home</a></p>
-        <h2>Contacts</h2>
+        <h2>Contact</h2>
       </div>
       <div class="row">
         <p>University of Iowa<br>
@@ -556,11 +571,40 @@
           Office: 201N<br>
           Iowa City, IA 52242<br>
           USA</p>
-          <p><a href="mailto:vincent@hongweicai.com?subject=Reaching%20Out&body=Hi%20Vincent&#44;%0A">&#9993; Email Me</a><br>
-          &#9743; (424) 888-2757</p>
       </div>
     </article>
   </section>
+
+  <!-- Archive -->
+    <!-- <section class="section-1" id="archive">
+      <article class="container">
+        <div class="row">
+          <p><a class="button" href="#home">&#8593; home</a></p>
+          <h2>Archive</h2>
+        </div>
+        <div class="row">
+          <div class="slider">
+            <div class="slide-viewer">
+              <div class="slide-group">
+                <div class="slide slide-1">
+                  <img src="img/slide-1.jpg" alt="No two are the same">
+                </div>
+                <div class="slide slide-2">
+                  <img src="img/slide-2.jpg" alt="Monsieur Mints">
+                </div>
+                <div class="slide slide-3">
+                  <img src="img/slide-3.jpg" alt="The Flower Series">
+                </div>
+                <div class="slide slide-4">
+                  <img src="img/slide-4.jpg" alt="Salt o' The Sea">
+                </div>
+              </div>
+            </div>
+            <div class="slide-buttons"></div>
+          </div>
+        </div>
+      </article>
+    </section> -->
 
   <footer>
     <article class="container">
@@ -573,12 +617,21 @@
             <li><a class="link-4" href="https://github.com/hongwei-cai" target="_blank">GitHub</a></li>
             <li><a class="link-5" href="https://www.linkedin.com/in/hongwei-cai/" target="_blank">LinkedIn</a></li>
           </ul>
-          <p id="copyright">Handcrafted by <em>H. Vincent Cai</em><br>
+          <p id="copyright"><a href="mailto:vincent@hongweicai.com?subject=Reaching%20Out&body=Hi%20Vincent&#44;%0A">&#9993; Email Me</a><br>
+          Handcrafted by <em>H. Vincent Cai</em><br>
             Thanks for visiting<br>
             &#169; Copyright 2021 - &#x221e;</p>
         </nav>
       </div>
     </article>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="script/jquery-3.7.0.js"><\/script>')</script>
+  <script src="script/effects.js" async></script>
+  <script src="script/tabPanels.js" async></script>
+  <script src="script/filter-tags.js" async></script>
+  <script src="script/accordion.js" async></script>
+  <script src="script/slider.js" async></script>
+  <!-- <script src="script/connection_check.js" async></script> -->
 </body>
 </html>
