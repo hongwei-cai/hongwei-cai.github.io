@@ -1,3 +1,6 @@
+/* Module: 
+Filter tags for work list
+__________________________________________________ */
 (function() {
 
   var $button_list = $('#work-list button');                  // Store all images
@@ -44,6 +47,11 @@
           .show();                                 // Show just those images
       }
     }).appendTo($buttons);                         // Add to the buttons
+  });
+
+  $('#buttons button').click(function() {
+    // Close all accordion panels
+    $('.accordion-panel:visible').slideUp();
   });
 
 }());

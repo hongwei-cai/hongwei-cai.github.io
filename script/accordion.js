@@ -1,5 +1,5 @@
-/* Module 2: 
-Accordion effects on work list
+/* Module: 
+Accordion effects for work list
 __________________________________________________ */
 
 $(document).ready(function() {

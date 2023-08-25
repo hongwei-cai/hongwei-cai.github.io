@@ -1,3 +1,7 @@
+/* Module: 
+Basic effects for page
+__________________________________________________ */
+
 $(document).ready(function() {
 
   $('#nav-top').hide().slideDown();

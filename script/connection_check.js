@@ -1,4 +1,4 @@
-/* Module 3: 
+/* Module: 
 Use local href if YouTube connection fails
 __________________________________________________ */
 
