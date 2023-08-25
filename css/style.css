@@ -100,18 +100,6 @@ a.button {
 a.pdf {
   float: right;
 }
-/* .work-order {
-  color: hsla(0, 0%, 12%, 0.7);
-  border:none;
-  padding:7px 25px 8px 25px;
-  text-transform: uppercase;
-  display: inline-block;
-  border-bottom: 1px solid hsla(0, 0%, 12%, 0.1);
-  font-size: 12px;
-  line-height: 22px;
-  font-weight: 700;
-  opacity:1;
-} */
 
 
 /********** TYPOGRAPHY **********/
@@ -241,7 +229,7 @@ header .row, h1 {
 }
 .section-1 ul .horinzontal, .section-2 ul .horinzontal {
   text-transform: uppercase;
-  display: inline-block;
+  display: inline;
 }
 .center-content {
   text-align: center;
@@ -271,7 +259,7 @@ header .row, h1 {
   white-space: nowrap;
   list-style-type: none;
   background-color: #3f3f3f;
-  border-bottom: 3px solid #3f3f3f;
+  /* border-bottom: 3px solid #3f3f3f; */
   float: left;
   outline: none;
   cursor: pointer;
@@ -291,7 +279,7 @@ header .row, h1 {
 .tab-list li.active a, .tab-list li a:hover {
   color: #1f1f1f;
   background-color: #7a7a7a;
-  /* background-color: #e7eff3; */
+  border-radius: 4px;
 }
 
 /********** PANELS **********/
@@ -382,8 +370,8 @@ header .row, h1 {
 
 
 /********** ACCORDION **********/
-.accordion, .menu {
-  background-color: ;
+.accordion {
+  background-color: #fffaf0;
   color: #1f1f1f;
   margin: 0;
   padding: 0;
@@ -416,7 +404,7 @@ header .row, h1 {
 .accordion-panel {
   display: none;
   background-color: #fffaf0;
-  /* color: #666; */
+  padding: 30px 0; 
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
   overflow: auto;
 }
@@ -435,30 +423,36 @@ header .row, h1 {
   clear: left;
 }
 
-.container #buttons {
+#buttons {
 	margin-bottom: 30px;
   overflow: hidden;
   background-color: #fffaf0;
-  border-bottom-color: #3f3f3f;
-  /* outline: none;
-  white-space: nowrap;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 10px; */
 	text-align: center;
-  /* text-transform: uppercase; */
+  /* border-bottom: 3px solid #3f3f3f; */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+@media (max-width: 800px) {
+  #buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 button {
   background-color: #3f3f3f;
-  border-bottom: 3px solid #fffaf0;
+  /* border-bottom: 2px solid #ffeecc; */
   border: none;
   padding: 3px 10px;
   border-radius: 4px;
   color: #fffaf0;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 26px;
 }
+
+/* #buttons.custom-font-size {
+  font-size: 12px;
+} */
 
 button:hover, button.active {
   background-color: #7a7a7a;
@@ -491,8 +485,6 @@ button:hover, button.active {
 .slide:first-child {
     display: block;}
 
-
-/********** BUTTONS **********/
 .slide-buttons {
   text-align: center;}
 

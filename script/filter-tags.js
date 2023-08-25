@@ -1,10 +1,10 @@
 (function() {
 
-  var $btns = $('#work-list button');                  // Store all images
+  var $button_list = $('#work-list button');                  // Store all images
   var $buttons = $('#buttons');                   // Store buttons element
   var tagged = {};                                // Create tagged object
 
-  $btns.each(function() {                         // Loop through images and
+  $button_list.each(function() {                         // Loop through images and
     var btn = this;                               // Store btn in variable
     var tags = $(this).data('tags');              // Get this element's tags
 
@@ -26,7 +26,7 @@
         .addClass('active')                        // Add the class of active
         .siblings()                                // Get its siblings
         .removeClass('active');                    // Remove active from siblings
-      $btns.show();                                // Show all images
+      $button_list.show();                                // Show all images
     }
   }).appendTo($buttons);                           // Add to buttons
 
@@ -38,7 +38,7 @@
           .addClass('active')                      // Make clicked item active
           .siblings()                              // Get its siblings
           .removeClass('active');                  // Remove active from siblings
-        $btns                                      // With all of the images
+        $button_list                                      // With all of the images
           .hide()                                  // Hide them
           .filter(tagged[tagName])                 // Find ones with this tag
           .show();                                 // Show just those images
